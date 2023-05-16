@@ -5,8 +5,7 @@
     const activeMenu = ref(false)
 
     function closeMenu() {
-        activeMenu.value = false
-    }
+        activeMenu.value = false    }
 </script>
 
 <template>
