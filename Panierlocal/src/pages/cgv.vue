@@ -1,0 +1,3 @@
+<template>
+    <h1>Conditions générales de ventes</h1>
+</template>
