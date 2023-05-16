@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .menu-link {
+        @apply block px-5 py-4;
+    }
+}
