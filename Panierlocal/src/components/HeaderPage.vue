@@ -28,24 +28,21 @@
       </button>
 
 			<nav 
-            class="invisible opacity-0 bg-white fixed inset-5 top-7 h-screen w-screen transition-all duration-300 ease-in-out" 
+            class="invisible opacity-0 bg-white font-bold text-base font-inter fixed inset-0 pt-20 pl-10 h-screen w-screen transition-all duration-300 ease-in-out lg:pt-70 lg:pl-30" 
             :class="{ '!visible !opacity-100': activeMenu }"
             v-scroll-lock="activeMenu">
-		    <ul>
+		    <ul class="flex flex-col gap-1 lg:grid lg:grid-cols-2">
           <li>Stéphanie Levèque</li>
           <li><RouterLink class="menu-link" to="/profil2" @click="closeMenu">Voir mon profil</RouterLink></li>
-          <span class="bg-black"></span>
 		      <li><RouterLink class="menu-link" to="/rechercher" @click="closeMenu">Rechercher</RouterLink></li>
 		      <li><RouterLink class="menu-link" to="pageProduits" @click="closeMenu">Produits</RouterLink></li>
 		      <li><RouterLink class="menu-link" to="/favoris" @click="closeMenu">Liste de Favoris</RouterLink></li>
 		      <li><RouterLink class="menu-link" to="/ajoutContenu" @click="closeMenu">Ajouter du contenu</RouterLink></li>
-          <span></span>
 		      <li><RouterLink class="menu-link" to="/messagerie" @click="closeMenu">Messagerie</RouterLink></li>
-          <span></span>
-              <li><RouterLink class="menu-link" to="/pageRecettes" @click="closeMenu">Recettes</RouterLink></li>
-              <li><RouterLink class="menu-link" to="/forum" @click="closeMenu">Forum</RouterLink></li>
-              <li><RouterLink class="menu-link" to="/evenements" @click="closeMenu">Evènements</RouterLink></li>
-              <li><RouterLink class="menu-link" to="/panier" @click="closeMenu">Panier</RouterLink></li>
+          <li><RouterLink class="menu-link" to="/pageRecettes" @click="closeMenu">Recettes</RouterLink></li>
+          <li><RouterLink class="menu-link" to="/forum" @click="closeMenu">Forum</RouterLink></li>
+          <li><RouterLink class="menu-link" to="/evenements" @click="closeMenu">Evènements</RouterLink></li>
+          <li><RouterLink class="menu-link" to="/panier" @click="closeMenu">Panier</RouterLink></li>
 		    </ul>
 		  </nav>
     </div>
