@@ -32,7 +32,13 @@
             :class="{ '!visible !opacity-100': activeMenu }"
             v-scroll-lock="activeMenu">
 		    <ul class="flex flex-col gap-1 lg:grid lg:grid-cols-2">
-          <li>Stéphanie Levèque</li>
+          <div class="w-[177px] h-[50px]">
+            <img class="absolute left-[30.5px] top-[96.5px]" src="ellipse-4.png" />
+            <p class="absolute left-24 top-[107px] text-xs font-semibold text-center text-[#252525]">
+              Stéphanie Lévêque
+            </p>
+            <p class="absolute left-24 top-[122px] text-[10px] text-left text-[#868686]">Voir mon profil</p>
+          </div>
           <li><RouterLink class="menu-link" to="/profil2" @click="closeMenu">Voir mon profil</RouterLink></li>
 		      <li><RouterLink class="menu-link" to="/rechercher" @click="closeMenu">Rechercher</RouterLink></li>
 		      <li><RouterLink class="menu-link" to="pageProduits" @click="closeMenu">Produits</RouterLink></li>

@@ -1,12 +1,10 @@
 <template>
     <h1>Footer</h1>
     <div class="w-[390px] h-[374px] relative">
-  <p
-    class="w-[94px] h-[15px] absolute left-[37px] top-[58px] text-xs font-semibold text-left uppercase text-[#252525]"
-  >
-    à propos
-  </p>
-  <p
+  <a class="w-[94px] h-[15px] absolute left-[37px] top-[58px] text-xs font-semibold text-left uppercase text-[#252525]">
+    À propos
+  </a>
+  <p 
     class="w-[100px] h-[15px] absolute left-[37px] top-[158px] text-xs font-semibold text-left uppercase text-[#252525]"
   >
     Communauté
@@ -26,6 +24,7 @@
   >
     Informations légales
   </p>
+
   <p
     class="w-[94px] h-[18px] absolute left-[42px] top-[83px] text-xs font-medium text-left text-[#324e2b]"
   >
