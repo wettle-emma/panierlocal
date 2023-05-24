@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import HeaderPage from '@/components/HeaderPage.vue';
-import FooterPage from '@/components/FooterPage.vue';
+
 </script>
 
 <template>
-<HeaderPage />
-<main>
     <h1>Politique de cookies</h1>
     <h2 class="text-lg font-semibold text-darkGreen">Chez Panier Local, vos données personnelles sont respectées. Votre sécurité est notre priorité. Voici donc les cookies que nous collectons</h2>
     <p>Les cookies nécessaires au fonctionnement du site : ces cookies sont indispensables au bon fonctionnement du site et permettent notamment de garantir la sécurité du site et de prévenir les fraudes.
@@ -21,6 +18,4 @@ Les cookies de publicité : ces cookies permettent de collecter des informations
 <p>Nous pouvons utiliser des cookies tiers sur notre site, tels que les cookies de Google Analytics, afin de collecter des informations sur l'utilisation du site par les utilisateurs. Ces cookies sont soumis aux politiques de confidentialité des tiers concernés.</p>
 <h3 class="text-xl font-montserrat text-darkGreen font-medium uppercase">Modification de la politique de cookies</h3>
 <p>Nous nous réservons le droit de modifier cette politique de cookies à tout moment. Tout changement sera publié sur cette page.</p>
-</main>
-<FooterPage /> 
 </template>

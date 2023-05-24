@@ -1,109 +1,64 @@
-<template>
-    <h1>Footer</h1>
-    <div class="w-[390px] h-[374px] relative">
-  <a class="w-[94px] h-[15px] absolute left-[37px] top-[58px] text-xs font-semibold text-left uppercase text-[#252525]">
-    À propos
-  </a>
-  <p 
-    class="w-[100px] h-[15px] absolute left-[37px] top-[158px] text-xs font-semibold text-left uppercase text-[#252525]"
-  >
-    Communauté
-  </p>
-  <p
-    class="w-[150px] h-[15px] absolute left-[37px] top-[281px] text-xs font-semibold text-left uppercase text-[#252525]"
-  >
-    Nous retrouver sur
-  </p>
-  <p
-    class="w-[94px] h-[15px] absolute left-[203px] top-[58px] text-xs font-semibold text-left uppercase text-[#252525]"
-  >
-    Compte
-  </p>
-  <p
-    class="w-[165px] h-[15px] absolute left-[203px] top-[158px] text-xs font-semibold text-left uppercase text-[#252525]"
-  >
-    Informations légales
-  </p>
+<script setup lang="ts">
+    import { ref, computed, watch} from 'vue';
+    import { RouterLink } from 'vue-router';
+    import Instagram from './icons/30px/Instagram.vue';
+    import YouTube from './icons/30px/YouTube.vue';
+    import Pinterest from './icons/30px/Pinterest.vue';
+    import Facebook from './icons/30px/Facebook.vue';
+</script>
 
-  <p
-    class="w-[94px] h-[18px] absolute left-[42px] top-[83px] text-xs font-medium text-left text-[#324e2b]"
-  >
-    Contact
-  </p>
-  <p
-    class="w-[118px] h-[18px] absolute left-[42px] top-[106px] text-xs font-medium text-left text-[#324e2b]"
-  >
-    Qui sommes-nous ?
-  </p>
-  <p
-    class="w-[118px] h-[18px] absolute left-[42px] top-[183px] text-xs font-medium text-left text-[#324e2b]"
-  >
-    Forum
-  </p>
-  <p
-    class="w-[118px] h-[18px] absolute left-[42px] top-[206px] text-xs font-medium text-left text-[#324e2b]"
-  >
-    Recettes
-  </p>
-  <p
-    class="w-[118px] h-[18px] absolute left-[42px] top-[229px] text-xs font-medium text-left text-[#324e2b]"
-  >
-    Évènements
-  </p>
-  <p
-    class="w-[118px] h-[18px] absolute left-52 top-[83px] text-xs font-medium text-left text-[#324e2b]"
-  >
-    Mon profil
-  </p>
-  <p
-    class="w-[118px] h-[18px] absolute left-52 top-[106px] text-xs font-medium text-left text-[#324e2b]"
-  >
-    Mes favoris
-  </p>
-  <p
-    class="w-[118px] h-[18px] absolute left-52 top-[183px] text-xs font-medium text-left text-[#324e2b]"
-  >
-    Mentions légales
-  </p>
-  <p
-    class="w-[140px] h-[15px] absolute left-52 top-[206px] text-xs font-medium text-left text-[#324e2b]"
-  >
-    Politique de cookies
-  </p>
-  <p
-    class="w-[140px] h-[15px] absolute left-52 top-[226px] text-xs font-medium text-left text-[#324e2b]"
-  >
-    CGV
-  </p>
-  <img
-    src="instagram.png"
-    class="w-[30px] h-[30px] absolute left-24 top-[305px] object-contain"
-  /><img
-    src="facebook.png"
-    class="w-[30px] h-[30px] absolute left-[41px] top-[305px] object-contain"
-  /><svg
-    width="345"
-    height="1"
-    viewBox="0 0 345 1"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    class="absolute left-[22.3px] top-[24.3px]"
-    preserveAspectRatio="xMidYMid meet"
-  >
-    <line
-      x1="-1.74846e-8"
-      y1="0.8"
-      x2="345"
-      y2="0.79997"
-      stroke="#252525"
-      stroke-width="0.4"
-    ></line>
-  </svg>
-  <div>
-        <PinterestVue />
-  </div>
-  <div class="w-[30px] h-6 absolute left-[152px] top-[309px]">
-    <img src="youtube.png" class="w-[30px] h-6 absolute left-[-1px] top-[-1px] object-contain" />
-  </div>
-</div>
+<template>
+    <footer class="lg:grid lg:grid-cols-4 gap-8">
+    <nav class="space-y-8 mx-4 my-4 columns-2 gap-8 lg:columns-4 lg:col-span-4 lg:mx-0">
+      <div class="space-y-2 lg:ml-5">
+        <h3 class="font-inter font-semibold text-base">À propos</h3>
+        <ul class="font-inter text-base text-darkGreen">
+          <li><RouterLink to="/contact">Contact</RouterLink></li>
+          <li><RouterLink to="/equipe">Qui sommes-nous</RouterLink></li>
+        </ul>
+      </div>
+
+      <div class="space-y-2">
+        <h3 class="font-inter font-semibold text-base">Communauté</h3>
+        <ul class="font-inter text-base text-darkGreen">
+          <li><RouterLink to="/forum">Forum</RouterLink></li>
+          <li><RouterLink to="/recette">Recettes</RouterLink></li>
+          <li><RouterLink to="/evenements">Evènements</RouterLink></li>
+        </ul>
+      </div>
+
+      <div class="space-y-2">
+        <h3 class="font-inter font-semibold text-base">Compte</h3>
+        <ul class="font-inter text-base text-darkGreen">
+          <li><RouterLink to="/parametres">Mon profil</RouterLink></li>
+          <li><RouterLink to="/favoris">Mes favoris</RouterLink></li>
+        </ul>
+      </div>
+
+      <div class="space-y-2">
+        <h3 class="font-inter font-semibold text-base">Informations légales</h3>
+        <ul class="font-inter text-base text-darkGreen">
+          <li><RouterLink to="/mentionsLegales">Mentions légales</RouterLink></li>
+          <li><RouterLink to="/cookies">Politique de cookies</RouterLink></li>
+          <li><RouterLink to="/cgv">CGV</RouterLink></li>
+        </ul>
+      </div>
+    </nav>
+
+      <h3 class="ml-5 font-inter font-semibold text-base">Nous retrouver</h3>
+      <ul class="my-4 ml-8 flex gap-8">
+        <li>
+          <a href="#"><Facebook /></a>
+        </li>
+        <li>
+          <a href="#"><Instagram /></a>
+        </li>
+        <li>
+          <a href="#"><YouTube /></a>
+        </li>
+        <li>
+          <a href="#"><Pinterest /></a>
+        </li>
+      </ul>
+  </footer>
 </template>

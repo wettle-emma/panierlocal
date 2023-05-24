@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import HeaderPage from '@/components/HeaderPage.vue';
-import FooterPage from '@/components/FooterPage.vue';
+
 </script>
 
 <template>
-<HeaderPage />
-<main>
     <h1>Qui sommes-nous ?</h1>
     <h2 class="text-lg font-semibold text-darkGreen">Panier Local, c'est une équipe engagée et proche de ses clients.</h2>
     <p>Nous sommes 3 étudiants du BUT MMI à Montbéliard. Dans le cadre d’un projet universitaire, nous devions réalisé un site à partir d’un nouveau concept. Nous voici :</p>
@@ -32,7 +29,4 @@ import FooterPage from '@/components/FooterPage.vue';
       <p class="w-[164.49px] h-[61px] absolute left-[159px] top-[943px] text-x2l text-left">Designer, développeur et chargé de communication</p>
      </div>
     </div>
-
-</main>
-<FooterPage /> 
 </template>

@@ -1,11 +1,8 @@
 <script setup lang="ts">
-import HeaderPage from '@/components/HeaderPage.vue';
-import FooterPage from '@/components/FooterPage.vue';
+
 </script>
 
 <template>
-<HeaderPage />
-<main>
     <h1>Conditions générales de ventes</h1>
     <h2 class="text-lg font-semibold text-darkGreen">Voici les conditions générales de ventes chez Panier Local.</h2>
     <p>Les présentes conditions générales de vente (CGV) ont pour objet de définir les modalités de vente des produits alimentaires proposés sur le site internet Panier Local.</p>
@@ -28,6 +25,4 @@ import FooterPage from '@/components/FooterPage.vue';
     <h3 class="font-inter text-lg font-semibold">Règlement des litiges</h3>
     <p>Les présentes CGV sont soumises au droit français. En cas de litige, le client et le vendeur s'engagent à rechercher une solution amiable. À défaut de solution amiable, le litige sera soumis aux tribunaux compétents.</p>
     <p class="text-sm text-darkGreen font-inter font-medium">*Sous la limite de la date de péremption et de l’état du produit.</p>
-</main>
-<FooterPage /> 
 </template>

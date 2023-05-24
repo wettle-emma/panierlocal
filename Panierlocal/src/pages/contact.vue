@@ -1,14 +1,10 @@
 <script setup lang="ts">
-import HeaderPage from '@/components/HeaderPage.vue';
-import FooterPage from '@/components/FooterPage.vue';
 import Phone from '@/components/icons/28px/Phone.vue';
 import Envelope from '@/components/icons/28px/Envelope.vue';
 import MapMarkerVue from '@/components/icons/28px/Map Marker.vue';
 </script>
 
 <template>
-<HeaderPage />
-<main>
     <h1>Contact</h1>
 
     <div>
@@ -23,8 +19,5 @@ import MapMarkerVue from '@/components/icons/28px/Map Marker.vue';
     <div>
         <h2 class="font-montserrat font-bold text-x3l">Nous contacter</h2>
 
-    </div>
-
-</main>
-<FooterPage /> 
+    </div> 
 </template>
