@@ -1,5 +1,5 @@
 <script setup lang="ts">
-    import { ref, computed, watch} from 'vue'
+    import { ref, computed, watch} from 'vue';
     import { RouterLink } from 'vue-router';
 
     const activeMenu = ref(false)
@@ -33,14 +33,23 @@
             v-scroll-lock="activeMenu">
 		    <ul class="flex flex-col gap-1 lg:grid lg:grid-cols-2">
           <div class="w-[177px] h-[50px]">
-            <img class="absolute left-[30.5px] top-[96.5px]" src="ellipse-4.png" />
+            <img class="absolute left-[30.5px] top-[96.5px]" src="#" />
             <p class="absolute left-24 top-[107px] text-xs font-semibold text-center text-[#252525]">
               Stéphanie Lévêque
             </p>
             <p class="absolute left-24 top-[122px] text-[10px] text-left text-[#868686]">Voir mon profil</p>
           </div>
-          <li><RouterLink class="menu-link" to="/profil2" @click="closeMenu">Voir mon profil</RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/rechercher" @click="closeMenu">Rechercher</RouterLink></li>
+          
+          <li>
+            <div class="w-[129px] h-[30px]">
+              <p class="absolute left-[95px] top-[205px] text-xs font-bold text-left text-[#252525]">
+                <RouterLink class="menu-link" to="/profil2" @click="closeMenu">
+                Rechercher
+                </RouterLink>
+              </p>
+            <img src="#" class="w-[30px] h-[30px] absolute left-[39.5px] top-[196.5px] object-contain"/>
+            </div>
+          </li>
 		      <li><RouterLink class="menu-link" to="pageProduits" @click="closeMenu">Produits</RouterLink></li>
 		      <li><RouterLink class="menu-link" to="/favoris" @click="closeMenu">Liste de Favoris</RouterLink></li>
 		      <li><RouterLink class="menu-link" to="/ajoutContenu" @click="closeMenu">Ajouter du contenu</RouterLink></li>

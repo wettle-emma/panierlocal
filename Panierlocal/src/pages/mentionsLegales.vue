@@ -6,6 +6,7 @@ import FooterPage from '@/components/FooterPage.vue';
 <template>
 <HeaderPage />
 <main>
+    <h1>Mentions Légales</h1>
     <p>Le site Panier Local est hébergé par o2switch, domicilié(e) à Chemin des Pardiaux, 63000 Clermont-Ferrand.</p>
     <p>Le contenu du site Panier Local, incluant notamment les textes, photographies, logos, marques, est la propriété exclusive de Panier Local ou de ses partenaires. Toute reproduction, diffusion ou utilisation, même partielle, des éléments du site est interdite sans l'autorisation préalable de Panier Local ou de ses partenaires.</p>
     <p> Le site Panier Local est conforme aux dispositions légales relatives à la protection des données personnelles. Les informations collectées auprès des utilisateurs du site sont traitées de manière confidentielle et sont destinées à l'usage exclusif de Panier Local. Les utilisateurs du site disposent d'un droit d'accès, de rectification et de suppression des données les concernant.</p>

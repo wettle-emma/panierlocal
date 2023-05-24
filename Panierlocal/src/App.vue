@@ -8,7 +8,6 @@
   <HeaderPage />
   <main>
   <RouterView />
-  <p>Emma la besta</p>
   </main>
   <FooterPage />
 </template>
