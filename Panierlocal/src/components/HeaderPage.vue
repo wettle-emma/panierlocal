@@ -39,7 +39,7 @@
             <p class="absolute left-24 top-[107px] text-xs font-semibold text-center text-[#252525]">
               Stéphanie Lévêque
             </p>
-            <p class="absolute left-24 top-[122px] text-[10px] text-left text-[#868686]">Voir mon profil</p>
+            <RouterLink to="/profil2"><p class="absolute left-24 top-[122px] text-[10px] text-left text-[#868686]">Voir mon profil</p></RouterLink>
           </div>
           
           <li>
