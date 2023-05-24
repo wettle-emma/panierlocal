@@ -1,6 +1,8 @@
 <script setup lang="ts">
     import { ref, computed, watch} from 'vue';
     import { RouterLink } from 'vue-router';
+    import MaleUser from './icons/30px/Male User.vue';
+    import logoVue from './icons/logo/logo.vue';
 
     const activeMenu = ref(false)
 
@@ -12,13 +14,13 @@
   <header class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-white px-6 py-5 transition-all duration-300 ease-in-out">
     <div class="flex items-center">
       <a href="/">
-        <LogoIcon />
+        <logoVue />
       </a>
     </div>
 
     <div class="flex items-center gap-4">
       <button>
-        <SearchIcon />
+        <MaleUser />
       </button>
 
       <button class="relative z-10 flex h-5 w-8 flex-col justify-between" @click="activeMenu = !activeMenu">

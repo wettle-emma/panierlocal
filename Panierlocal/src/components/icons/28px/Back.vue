@@ -1,3 +1,4 @@
+<template>
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="24" height="24" fill="url(#pattern0)"/>
 <defs>
@@ -7,3 +8,4 @@
 <image id="image0_27_32" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAABOUlEQVR4nO3asUoDURRF0ROLOwr+txYiaW38CIvgH1kJokLKyEAqC4Wgb/TOWjBdII/N4SXFJAAAAAD8N1OSmyTPSd6T3CW5WPpQHSPvkhw+PXNsfjny/Lz+1Jes3fRF5Pl5WfqAa4h8SHK79CHXEHl3/BwnqiQP30R+THJ+6hcQkUewZJF7KHeyyC2UJYvcQlmyyC2UJYvcQlmyyC2UJYvcQlmyyC2UJYvcQlmyyC2UJYvcwuTlljGuvUE0xpM3iIRu5crVMcbkx3Cc8h9a7JbKssVuqSxb7JbKssVuqSxb7JbKssVuqSxb7JbKssVuqSxb7JbKssVuqSxb7JbKsscReyAv6fyx2NuRB1pz7Lckm6UPuYbY+yRnSx9wDbHvlz5Y19jb43WxP0a+XPpQnW3cywAAAJDOPgCEQhT7smKmsQAAAABJRU5ErkJggg=="/>
 </defs>
 </svg>
+</template>
