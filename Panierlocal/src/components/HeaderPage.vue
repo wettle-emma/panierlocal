@@ -1,13 +1,22 @@
 <script setup lang="ts">
     import { ref, computed, watch} from 'vue';
     import { RouterLink } from 'vue-router';
-    import MaleUser from './icons/30px/Male User.vue';
+    import MaleUser from './icons/30px/MaleUser.vue';
     import logoVue from './icons/logo/logo.vue';
+    import ShoppingBagVue from './icons/30px/ShoppingBag.vue';
+    import ChatVue from './icons/30px/Chat.vue';
+    import CookingBookVue from './icons/28px/Cooking Book.vue';
+    import GoogleCalendarVue from './icons/30px/GoogleCalendar.vue';
+    import LoveVue from './icons/30px/Love.vue';
+    import PeopleWorkingTogetherVue from './icons/30px/PeopleWorkingTogether.vue';
+    import ShoppingCartVue from './icons/30px/ShoppingCart.vue';
+    import Ajout from './icons/30px/Ajout.vue';
+    import SearchVue from './icons/30px/Search.vue';
 
     const activeMenu = ref(false)
 
     function closeMenu() {
-        activeMenu.value = false    }
+        activeMenu.value = false }
 </script>
 
 <template>
@@ -44,15 +53,16 @@
           
           <li>
             <div class="w-[129px] h-[30px]">
+              <SearchVue /> 
               <p class="absolute left-[95px] top-[205px] text-xs font-bold text-left text-[#252525]">
                 <RouterLink class="menu-link" to="/profil2" @click="closeMenu">
                 Rechercher
                 </RouterLink>
               </p>
-            <img src="#" class="w-[30px] h-[30px] absolute left-[39.5px] top-[196.5px] object-contain"/>
+            
             </div>
           </li>
-		      <li><RouterLink class="menu-link" to="pageProduits" @click="closeMenu">Produits</RouterLink></li>
+		      <li><RouterLink class="menu-link" to="/pageProduits" @click="closeMenu">Produits</RouterLink></li>
 		      <li><RouterLink class="menu-link" to="/favoris" @click="closeMenu">Liste de Favoris</RouterLink></li>
 		      <li><RouterLink class="menu-link" to="/ajoutContenu" @click="closeMenu">Ajouter du contenu</RouterLink></li>
 		      <li><RouterLink class="menu-link" to="/messagerie" @click="closeMenu">Messagerie</RouterLink></li>
