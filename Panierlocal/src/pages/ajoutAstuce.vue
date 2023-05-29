@@ -1,3 +1,3 @@
 <template>
-    <h1>Ajout Astuce</h1>
-</template>
+    <h1>page astuce</h1>
+    </template>

@@ -4,7 +4,7 @@
 
 @layer base {
    h1 {
-   @apply text-darkGreen text-x4l font-montserrat pt-20 font-bold} 
+   @apply text-darkGreen text-x4l font-montserrat mt-20 font-bold} 
    p {
     @apply text-black text-base font-inter
    }
