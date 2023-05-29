@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import logo from '@/components/icons/logo/logo.vue';
 import ChevronDown from '@/components/icons/30px/ChevronDown.vue';
+import { Carousel, initTE } from "tw-elements";
+
+initTE({ Carousel });
 </script>
 
 <template>
@@ -11,25 +14,16 @@ import ChevronDown from '@/components/icons/30px/ChevronDown.vue';
 
     <div>
        <h1>A ne pas manquer</h1>
-       <div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <div class="relative h-56 rounded-lg md:h-96">
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="src/components/img/accueil/brocante.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="brocante">
+       <div class="carousel carousel-center rounded-box">
+        <div class="carousel-item">
+            <img src="src/components/img/accueil/brocante.webp" alt="brocante">
         </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="src/components/img/accueil/marché.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="marché de Reims">
+        <div class="carousel-item">
+            <img src="src/components/img/accueil/marché.webp" alt="marché de Reims">
         </div>
-        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-            <img src="src/components/img/accueil/cours.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="cours de jardinage">
+        <div class="carousel-item">
+            <img src="src/components/img/accueil/cours.webp" alt="cours de jardinage">
         </div>
-    </div>
-    <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-    </div>
        </div>
     </div>
 
