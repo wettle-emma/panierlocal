@@ -1,3 +1,15 @@
+<script setup lang="ts">
+import { Collections, type ProduitResponse } from '@/pocketbase-types';
+import ProduitCardVue from '@/components/ProduitCard.vue';
+
+import { Produitrecords } from '@/backend'
+
+const produit = await Produitrecords()
+
+</script>
+
 <template>
-    <h1>Produit</h1>
+  <main>
+    <ProduitCard v-bind="produit[0]" />/>
+  </main>
 </template>
