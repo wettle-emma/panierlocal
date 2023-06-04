@@ -1,9 +1,6 @@
 <script setup lang="ts">
 import logo from '@/components/icons/logo/logo.vue';
 import ChevronDown from '@/components/icons/30px/ChevronDown.vue';
-import { Carousel, initTE } from "tw-elements";
-
-initTE({ Carousel });
 </script>
 
 <template>

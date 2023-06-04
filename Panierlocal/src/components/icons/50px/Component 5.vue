@@ -1,13 +1,7 @@
 <template>
-<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <rect x="0.5" y="0.5" width="49" height="49" rx="5.5" stroke="#96B18F"/>
 <rect x="0.5" y="0.5" width="49" height="49" rx="5.5" stroke="#96B18F"/>
-<rect x="7" y="7" width="35" height="35" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_77_147" transform="scale(0.0111111)"/>
-</pattern>
-<image id="image0_77_147" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAACoklEQVR4nO2cS27UQBCGv7BIQOIAE1YELkFY8LpRAoeAFREgQbKAO7BAvG9B4AQgBQQiD5ldIcsdCUXTM+4Zu2i3/0+qzdgud38q2+NHNwghRNGsAQ+Ab8BX4H74TXTIKvASsDPxGjgv0/1KNsn2k2yS7SfZJNtPskm2n2STbD/Jku0oWbIdJUv2FOq7u1dzhM1a3mbb0d9Brrao5NO7v9jylByjZC2xGmPrLJJrVDxOFDNLdFvZO4yMc8BJYvXNE91G9hGwwshEV4mHeBvR82RXYd+j4kXiebSt6FmynzNCLgbZVTikH865WKWIJuTaCbmrILne52hZablequh/84/qvLwsi4oWiUi0E6aKluiiMFV0nNvAHvAZOF5SVh/bHoe27QK3GCBXgQ9znjtYBqLPxjtgg4FwHfiR0DnLSHQd34FNMucycJDYMctMtIVCqY/KbHm/QKcsQ9F1fCRT7izYIctUtOV6gdyLNLYCtoDJkvmXER1jHdie8cj2GRnyJdLYrY7y9yH6lLuR3PtkyFGksZMBiJ5Ech+SIX2KKCF/ZwxdhEl0g0QXIsJU0Q0SXYgIU0U3SHQhIkwV3SDRhYgwVXSDRBciwlTRDRJdiAhTRTdItJOIX1Ny/+wwvyo68GSKjEd0h0QHLoR3eCchnobfukKinT4sl2gnJNoJiXZCop2QaCck2gmJdkKinZBoJyTaCYl2QqKdkGgnJNoJiXZCop2QaCcGI/qw58FCfXIp0vbfDGj42zb5c29Iw992I42tgux68GRurIcxhn8iba9fAGc5N4cVFjfIlLcZyLGOop6ht7hpJCyzqKeRuELmbIbJRWygcQBcYyBsDPQ08iYclYPjZviMa3/GoPz/GXWbPoV/F9le+IQQQgghhBCCPvkLbY+LFWWdenwAAAAASUVORK5CYII="/>
-</defs>
+<path d="M20.875 15.5L25 11M25 11L29.125 15.5M25 11V26M18.1253 21.5C16.844 21.5 16.2033 21.5 15.6979 21.7283C15.0241 22.0328 14.4884 22.6172 14.2093 23.3524C14 23.9036 14 24.6021 14 26V33.2C14 34.8801 14 35.7197 14.2997 36.3614C14.5634 36.9259 14.9838 37.3857 15.5012 37.6733C16.0889 38 16.8586 38 18.3958 38H31.605C33.1421 38 33.9107 38 34.4984 37.6733C35.0158 37.3857 35.4369 36.9259 35.7005 36.3614C36 35.7203 36 34.8815 36 33.2047V26C36 24.6021 35.9999 23.9036 35.7906 23.3524C35.5115 22.6172 34.9762 22.0328 34.3024 21.7283C33.797 21.5 33.1564 21.5 31.875 21.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 </template>

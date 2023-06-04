@@ -1,11 +1,5 @@
 <template>
-<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="20" height="20" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0_335_6301" transform="scale(0.0111111)"/>
-</pattern>
-<image id="image0_335_6301" width="90" height="90" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAADqklEQVR4nO2dS29NURTHf0nRSoWpqgTBF0BHiEbKVA2Q1COompC0SNXQTHUkTfo1vDogfAAilXpMTDDxCH0aIbntkp2siDSuXD2Pvc4565f8Jzf33uz17+k+e62z9r7gOI7jOI7jOI7jNEwT0AH0AiPAXeAV8BaYBX6qZvW1V/qem/qZXfodzl/YCAwA48A3QBJqHrgP9APtVJzVwEngMbCQgrn1VAMeASeAFirEGr3SPmZobj19Ba4D6ygxK4FBYCaCwUsVxnBFx1Qq9gKvDRi8VG+ALkpAmBPHgEUDptZTGNso0ExB2Qw8NWCkNKjnwDYKRldKyzTJWWFZuJ+CcBj4bsA0WaZCMnQM45zPeE0sOSnE0IdRujU5iG2SpGj2UYwR5rUfBsyRDKaRgxhhe0FvfPIfN8itsU1u1mWRlFwTsdfZYwZMkJwUkppoabXljE9SVoh1X94mrwBeGghectbrvAtRgwaClki6lGc9edpAwBJJ0+pB5gwZCFYiK9SyMy97fjIQqETWZ30UlxmnDAQpRtSTpdGPDQQoRvQgK5PbS1Y0khSKTpm0MgwYCE6M6WIWRo8bCEyM6XbaJocWqzkDgYkxzaXdftZhICgxqp1pGn3OQEBiVGfSNHrEQEBiVDfSNPqegYCkCjfEKpZEpUFNpmn0+4QPOAeBNuwRxnRVx7jc+N6lOaAkZdGr2CdJRXIqzYEk+Yu3YZ/1CeILbRYmjN6AfdqtGJ1k6hjCPtesTB1Jb4ZDRq/sDTo2MzdDX96Rz/LOExbySVg8BSefFLw3wRwmJdfpNI32Mil1jd6RptFe+Cefwj+6tzr2v6mU/VEWuq04dmBiTBeyWtx7uwG/Ta5pjSQTHhm4iqTsDTTosQ+xA5QqtIS1RDr+QarW5Fj1JnRRXSYHWrU0KBXVdF6N6GgjtlRU/eS8WeiFgaCl7JuFAnt8+1t+jBq4yiQn3SIizbp9V0quZ8AqIrNVN6ZLiSt0WzBCZ8FPnZE6Cg9tD2CMQyUrOi0ARzBKX0mO+qlpT7hpugs+jfyweMTPv47+mS/oja+TgrEJeGLAPGlQExaO9Emyzh41nkEuajISfZ2cVrr+0oCpSxXGtJuSsUIPFbFQYp3SKlwYU2lp1SA/RDD4ix7UvZYK0QIcBx5mnOjU9EFqT9WOnv8bbbqB/Y7+GkVSc2f1uy5k2RJQdJq0n+0sMKzdQJP6UyAzf/w8yIy+NqnvGdZdrOGz/vMgjuM4juM4juM4NMgvd8bgdcflLmQAAAAASUVORK5CYII="/>
-</defs>
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M1 12.5C1 6.14872 6.14872 1 12.5 1C18.8512 1 24 6.14872 24 12.5C24 18.8512 18.8512 24 12.5 24C6.14872 24 1 18.8512 1 12.5ZM7.9 12.5C7.9 11.8649 8.41488 11.35 9.05 11.35H15.95C16.5851 11.35 17.1 11.8649 17.1 12.5C17.1 13.1351 16.5851 13.65 15.95 13.65H9.05C8.41488 13.65 7.9 13.1351 7.9 12.5Z" fill="#323232"/>
 </svg>
 </template>
