@@ -28,7 +28,9 @@
 
     <div class="flex items-center gap-4">
       <button>
+        <RouterLink to="/profil2">
         <MaleUser />
+        </RouterLink>
       </button>
 
       <button class="relative z-10 flex h-5 w-8 flex-col justify-between" @click="activeMenu = !activeMenu">

@@ -7,7 +7,7 @@ import MapMarkerVue from '@/components/icons/28px/Map Marker.vue';
 <template>
     <h1>Contact</h1>
 
-    <div class="grid grid-cols-2 lg:gap-4">
+    <div class="lg:grid lg:grid-cols-2 lg:gap-4">
     <div class="lg:grid-cols-1 lg:mx-auto lg:mt-5">
       <div>
       <h2 class="font-montserrat font-bold text-x3l pl-5 mb-4">Nos coordonnées</h2>

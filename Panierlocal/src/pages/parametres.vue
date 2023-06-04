@@ -3,67 +3,41 @@
 </script>
 
 <template>
-      <div class="w-[69px] h-6">
-       <p class="left-5 top-[3px] text-sm text-left">Retour</p>
-        <div class="w-[17px] h-6 left-0 top-0">
-         <img src="back.png" class="w-[17px] h-6 left-[-1px] top-[-1px] object-contain" />
-       </div>
+  <h1>Votre profil</h1>
+  <div class="mb-10 lg:grid lg:grid-cols-2 lg:gap-2">
+    <div class="">
+      <div class="grid grid-cols-2 gap-2">
+        <div class="ml-4">
+          <img class="w-2/3 lg:w-2/5" src="../components/img/pdp + events/stephanie.webp" alt="Photo de profil de Stéphanie">
+          <p class="text-base text-grey mt-1">Modifier la photo de profil</p>
+        </div>
+        
+        <div class="">
+          <p class="uppercase text-x2l text-center mb-4">Stéphanie Levèque</p>
+          <div class="bg-darkGrey h-px w-auto mr-2"></div>
+          <p class="font-inter text-base text-darkGrey mx-auto my-2">3 rue du champs, 68390 Baldersheim</p>
+          <div class="bg-darkGrey h-px w-auto mr-2"></div>
+          <p class="font-inter text-base text-darkGrey mx-auto my-2">Secrétaire médicale</p>
+          <div class="bg-darkGrey h-px w-auto mr-2"></div>
+          <p class="font-inter text-base text-darkGrey mx-auto my-2">J'aime cuisiner et partager mes recettes avec autrui</p>
+          <div class="bg-darkGrey h-px w-auto mr-2"></div>
+        </div>
       </div>
 
-      <h1>Votre profil</h1>
-
-      <img src="ellipse-4.png" />
-      <p class="text-[10px] text-center text-darkGrey">Modifier la photo de profil</p>
-      <p class="text-base text-left uppercase">Stéphanie leveque</p>
-      <span class="opacity-100 bg-darkGrey"></span>
-      <p class="text-[11px] font-medium text-left text-darkGrey">3 rue du champs, 68390 Baldersheim</p>
-      <span class="opacity-100 bg-darkGrey"></span>
-      <p class="text-[11px] font-medium text-left text-darkGrey">Secrétaire médicale</p>
-      <span class="opacity-100 bg-darkGrey"></span>
-      <p class="w-[197px] text-[11px] font-medium text-left text-darkGrey">J’aime cuisiner et partager mes recettes avec autrui</p>
-      <span class="opacity-100 bg-darkGrey"></span>
-
-    <div class="w-[340px] h-[24.23px]">
-       <div class="w-[340px] h-[24.23px] left-[24.5px] top-[391.5px] rounded-md border border-midGreen"></div>
-        <p class="w-[340px] h-[24.23px] left-[25px] top-[392px] text-x2l text-left text-darkGrey">Modifier l’adresse e-mail</p>
+      <div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-8 flex items-center justify-center"><p class="font-inter font-semibold text-[13px] text-grey text-center">Modifier l'addresse email</p></div>
+      <div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 flex items-center justify-center"><p class="font-inter font-semibold text-[13px] text-grey text-center">Modifier votre mot de passe</p></div>
     </div>
 
-    <div class="w-[340px] h-[24.23px]">
-       <div class="w-[340px] h-[24.23px] left-[24.5px] top-[427.85px] rounded-md border border-midGreen"></div>
-       <p class="w-[340px] h-[24.23px] left-[25px] top-[428.35px] text-x2l text-left text-darkGrey">Modifier votre mot de passe</p>
-    </div>
+    <div>
+      <div class="w-auto h-px my-6 bg-black lg:hidden"></div>
+      <p class="font-inter font-bold text-Pop text-x2l text-center mb-6">Vos points : 500 points</p>
 
-    <span class="opacity-100 bg-darkGrey"></span>
-
-    <div class="w-[329px] h-[33px]">
-       <div class="w-[329px] h-[33px] left-[29.5px] top-[529.5px] rounded-[10px] bg-Pop">
-        <p class="w-[99px] h-[13.34px] left-16 top-[539.83px] text-x2l font-bold text-left uppercase">Vos points</p>
-        <p class="w-[97px] h-[13.34px] left-[228px] top-[539.83px] text-x2l font-bold text-left uppercase">500 points</p>
-       </div>
+      <div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 flex items-center justify-center"><p class="font-inter font-semibold text-xl text-center">Supprimer un produit</p></div>
+      <RouterLink to="/favoris"><div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 flex items-center justify-center"><p class="font-inter font-semibold text-xl text-center">Favoris</p></div></RouterLink>
+      <RouterLink to="/messagerie"><div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 flex items-center justify-center"><p class="font-inter font-semibold text-xl text-center">Messagerie</p></div></RouterLink>
+      <RouterLink to="/ajoutContenu"><button class="w-40 rounded-x2l bg-midGreen p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black">Ajouter un contenu</button></RouterLink>
     </div>
-
-    <div class="w-[339px] h-[30px] relative">
-      <div class="w-[339px] h-[30px] left-[-1px] top-[-1px] rounded-md border border-midGreen">
-       <p class="w-[269.21px] h-[17px] left-[34.9px] top-1.5 text-xl text-center">Supprimer un produit</p>
-      </div>
-    </div>
-
-    <div class="w-[339px] h-[30px] relative">
-      <div class="w-[339px] h-[30px] left-[-1px] top-[-1px] rounded-md border border-midGreen">
-      <RouterLink to="/favoris"><p class="w-[269.21px] h-[17px] left-[34.9px] top-1.5 text-xl text-center">Favoris</p></RouterLink>
-      </div>
-    </div>
-
-    <div class="w-[338px] h-[30px]">
-      <div class="w-[338px] h-[30px] left-[-1px] top-[-1px] rounded-md border border-midGreen">
-       <RouterLink to="/messagerie"><p class="w-[268.41px] h-[17px] left-[34.79px] top-1.5 text-xl text-center">Messagerie</p></RouterLink>
-      </div>
-    </div>
-
-    <div class="w-[328px] h-[50px] relative">
-      <div class="w-[328px] h-[50px] left-[-1px] top-[-1px] rounded-md bg-midGreen">
-       <RouterLink to="/ajoutContenu"><p class="w-[328px] h-[50px] left-0 top-0 text-xl font-bold text-center uppercase">Ajouter un contenu</p></RouterLink>
-      </div>
-    </div>
+  </div>
+  
 
 </template>
