@@ -1,23 +1,42 @@
 <script setup lang="ts">
-// import Hero from '@/components/Hero.vue'
-import Card from '@/components/Card.vue'
-import { event } from '@/data'
 </script>
 
 <template>
-
-    <h1>Évènement</h1>
-
-    <p>Les évènements écologiques proche de chez vous</p>
-
-  <Hero title="Evenement" imgPath="#" imgAlt="/">
+    <h1>Ajouter un évènement</h1>
+    <div class="ml-4 mb-10 lg:grid lg:grid-cols-2">
+        <div>
+        <div>
+            <h2 class="text-xl font-montserrat font-medium uppercase">Ajouter une image</h2>
+            <div class="bg-grey w-2/3 h-40 rounded-x2l mx-auto mt-4 flex items-center justify-center"><p class="font-inter font-semibold text-base text-center">+ choisir une image</p></div>
+        </div>
     
-    <template #chapo>
-      <p class="text-xl leading-normal lg:text-3xl"></p>    
-    </template>
+        <div>
+            <h2 class="text-xl font-montserrat font-medium uppercase mt-8">Ajouter un titre</h2>
+            <div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 flex items-center justify-center"><p class="font-inter font-semibold text-[13px] text-grey text-center">Nom de l'évènement</p></div>
+        </div>
+        
+        <div>
+            <h2 class="text-xl font-montserrat font-medium uppercase mt-8">Définir une date</h2>
+            <div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 flex items-center justify-center"><p class="font-inter font-semibold text-[13px] text-grey text-center">Date</p></div>
+        </div>
+      </div>
+
+        <div>
+        <div>
+            <h2 class="text-xl font-montserrat font-medium uppercase mt-8">Ajouter une heure</h2>
+            <div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 flex items-center justify-center"><p class="font-inter font-semibold text-[13px] text-grey text-center">Heure</p></div>
+        </div>
     
-  </Hero>
-  <div class="grille my-24">
-    <Card  v-for="event in events" v-bind="event" :key="event.id"/>
-  </div>
+        <div>
+            <h2 class="text-xl font-montserrat font-medium uppercase mt-8">Ajouter une addresse</h2>
+            <div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 mb-16 flex items-center justify-center"><p class="font-inter font-semibold text-[13px] text-grey text-center">Adresse</p></div>
+        </div>
+
+        <div>
+            <h2 class="text-xl font-montserrat font-medium uppercase mt-8">Ajouter un contact</h2>
+            <div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 mb-16 flex items-center justify-center"><p class="font-inter font-semibold text-[13px] text-grey text-center">Contact</p></div>
+        </div>
+    
+    </div>
+</div>
 </template>

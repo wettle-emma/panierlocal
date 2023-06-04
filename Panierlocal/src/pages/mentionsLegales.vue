@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <h1 class="pt-40 pl-3 pb-5">Mentions Légales</h1>
+    <h1>Mentions Légales</h1>
     <div class="space-y-4 mx-4 mt-4 mb-8 columns-1 gap-6 lg:columns-3 lg:col-span-3 lg:mx-0">
     <p>Le site Panier Local est hébergé par o2switch, domicilié(e) à Chemin des Pardiaux, 63000 Clermont-Ferrand.</p>
     <p>Le contenu du site Panier Local, incluant notamment les textes, photographies, logos, marques, est la propriété exclusive de Panier Local ou de ses partenaires. Toute reproduction, diffusion ou utilisation, même partielle, des éléments du site est interdite sans l'autorisation préalable de Panier Local ou de ses partenaires.</p>

@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import logo from '@/components/icons/logo/logo.vue';
-import ChevronDown from '@/components/icons/30px/ChevronDown.vue';
+import ChevronDown from '@/components/icons/30px/chevronDown.vue';
+import LogoAccueil from '@/components/icons/logo/logoAccueil.vue';
 </script>
 
 <template>
-    <logo />
+    <LogoAccueil />
     <p class="text-center mt-20 text-x2l">Panier local permet à chacun d’agir à son échelle contre le gaspillage. Tout en agissant pour la planète. Panier local nous rapproche pour une cause qui en vaut la peine.</p>
 
-    <ChevronDown class="content-center" />
+    
 
     <div>
        <h1>A ne pas manquer</h1>

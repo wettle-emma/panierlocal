@@ -1,17 +1,18 @@
 <script setup lang="ts">
     import { ref, computed, watch} from 'vue';
     import { RouterLink } from 'vue-router';
-    import MaleUser from './icons/30px/MaleUser.vue';
+    import Search from './icons/30px/Search.vue';
+    import ShoppingBag from './icons/30px/ShoppingBag.vue';
+    import Love from './icons/30px/Love.vue';
+    import plus from './icons/30px/plus.vue';
+    import Chat from './icons/30px/Chat.vue';
+    import CookingBookVue from './icons/30px/CookingBook.vue';
+    import group from './icons/30px/group.vue';
+    import CalendarVue from './icons/30px/Calendar.vue';
+    import ShoppingCartVue from './icons/30px/Shopping Cart.vue';
     import logoVue from './icons/logo/logo.vue';
-    import ShoppingBagVue from './icons/30px/ShoppingBag.vue';
-    import ChatVue from './icons/30px/Chat.vue';
-    import CookingBookVue from './icons/28px/Cooking Book.vue';
-    import GoogleCalendarVue from './icons/30px/GoogleCalendar.vue';
-    import LoveVue from './icons/30px/Love.vue';
-    import PeopleWorkingTogetherVue from './icons/30px/PeopleWorkingTogether.vue';
-    import ShoppingCartVue from './icons/30px/ShoppingCart.vue';
-    import Ajout from './icons/30px/Ajout.vue';
-    import SearchVue from './icons/30px/Search.vue';
+    import MaleUser from './icons/30px/MaleUser.vue';
+
 
     const activeMenu = ref(false)
 
@@ -62,14 +63,14 @@
             
             </div>
           </li>
-		      <li><RouterLink class="menu-link" to="/pageProduits" @click="closeMenu">Produits</RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/favoris" @click="closeMenu">Liste de Favoris</RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/ajoutContenu" @click="closeMenu">Ajouter du contenu</RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/messagerie" @click="closeMenu">Messagerie</RouterLink></li>
-          <li><RouterLink class="menu-link" to="/pageRecettes" @click="closeMenu">Recettes</RouterLink></li>
-          <li><RouterLink class="menu-link" to="/forum" @click="closeMenu">Forum</RouterLink></li>
-          <li><RouterLink class="menu-link" to="/evenements" @click="closeMenu">Evènements</RouterLink></li>
-          <li><RouterLink class="menu-link" to="/panier" @click="closeMenu">Panier</RouterLink></li>
+		      <li><RouterLink class="menu-link" to="/pageProduits" @click="closeMenu"><Search />Produits</RouterLink></li>
+		      <li><RouterLink class="menu-link" to="/favoris" @click="closeMenu"><ShoppingBag />Liste de Favoris</RouterLink></li>
+		      <li><RouterLink class="menu-link" to="/ajoutContenu" @click="closeMenu"><Love />Ajouter du contenu</RouterLink></li>
+		      <li><RouterLink class="menu-link" to="/messagerie" @click="closeMenu"><plus />Messagerie</RouterLink></li>
+          <li><RouterLink class="menu-link" to="/pageRecettes" @click="closeMenu"><CookingBookVue />Recettes</RouterLink></li>
+          <li><RouterLink class="menu-link" to="/forum" @click="closeMenu"><group />Forum</RouterLink></li>
+          <li><RouterLink class="menu-link" to="/evenements" @click="closeMenu"><CalendarVue />Evènements</RouterLink></li>
+          <li><RouterLink class="menu-link" to="/panier" @click="closeMenu"><ShoppingCartVue />Panier</RouterLink></li>
 		    </ul>
 		  </nav>
     </div>
