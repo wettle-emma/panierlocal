@@ -12,6 +12,6 @@
 
 @layer components {
     .menu-link {
-        @apply block px-5 py-4;
+        @apply flex px-5 py-5 pl-3 ;
     }
 }

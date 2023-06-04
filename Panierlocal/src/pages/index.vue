@@ -1,16 +1,15 @@
 <script setup lang="ts">
-import ChevronDown from '@/components/icons/30px/chevronDown.vue';
-import LogoAccueil from '@/components/icons/logo/logoAccueil.vue';
+import logo from '@/components/icons/logo/logo.vue';
 </script>
 
 <template>
-    <LogoAccueil />
-    <p class="text-center mt-20 text-x2l">Panier local permet à chacun d’agir à son échelle contre le gaspillage. Tout en agissant pour la planète. Panier local nous rapproche pour une cause qui en vaut la peine.</p>
-
+  <div class="pt-48">
+    <logo class="mx-auto mb-16"/>
+    <p class="text-center text-x2l mx-10">Panier local permet à chacun d’agir à son échelle contre le gaspillage. Tout en agissant pour la planète. Panier local nous rapproche pour une cause qui en vaut la peine.</p>
+  </div>
     
-
-    <div>
-       <h1>A ne pas manquer</h1>
+    <div class="mt-20">
+       <h1 class="pt-0">A ne pas manquer</h1>
        <div class="carousel carousel-center rounded-box">
         <div class="carousel-item">
             <img src="src/components/img/accueil/brocante.webp" alt="brocante">

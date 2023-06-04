@@ -1,7 +1,6 @@
 <script setup lang="ts">
     import { ref, computed, watch} from 'vue';
     import { RouterLink } from 'vue-router';
-    import Search from './icons/30px/Search.vue';
     import ShoppingBag from './icons/30px/ShoppingBag.vue';
     import Love from './icons/30px/Love.vue';
     import plus from './icons/30px/plus.vue';
@@ -12,7 +11,6 @@
     import ShoppingCartVue from './icons/30px/Shopping Cart.vue';
     import logoVue from './icons/logo/logo.vue';
     import MaleUser from './icons/30px/MaleUser.vue';
-
 
     const activeMenu = ref(false)
 
@@ -45,32 +43,19 @@
             v-scroll-lock="activeMenu">
 		    <ul class="flex flex-col gap-1 lg:grid lg:grid-cols-2">
           <div class="w-[177px] h-[50px]">
-            <img class="absolute left-[30.5px] top-[96.5px]" src="#" />
-            <p class="absolute left-24 top-[107px] text-xs font-semibold text-center text-[#252525]">
-              Stéphanie Lévêque
-            </p>
+            <img class="left-[30.5px] top-[96.5px] w-1/4" src="../components/img/pdp + events/stephanie.webp" />
+            <p class="absolute left-24 top-[107px] text-xs font-semibold text-center text-[#252525]">Stéphanie Lévêque</p>
             <RouterLink to="/profil2"><p class="absolute left-24 top-[122px] text-[10px] text-left text-[#868686]">Voir mon profil</p></RouterLink>
           </div>
           
-          <li>
-            <div class="w-[129px] h-[30px]">
-              <SearchVue /> 
-              <p class="absolute left-[95px] top-[205px] text-xs font-bold text-left text-[#252525]">
-                <RouterLink class="menu-link" to="/profil2" @click="closeMenu">
-                Rechercher
-                </RouterLink>
-              </p>
-            
-            </div>
-          </li>
-		      <li><RouterLink class="menu-link" to="/pageProduits" @click="closeMenu"><Search />Produits</RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/favoris" @click="closeMenu"><ShoppingBag />Liste de Favoris</RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/ajoutContenu" @click="closeMenu"><Love />Ajouter du contenu</RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/messagerie" @click="closeMenu"><plus />Messagerie</RouterLink></li>
-          <li><RouterLink class="menu-link" to="/pageRecettes" @click="closeMenu"><CookingBookVue />Recettes</RouterLink></li>
-          <li><RouterLink class="menu-link" to="/forum" @click="closeMenu"><group />Forum</RouterLink></li>
-          <li><RouterLink class="menu-link" to="/evenements" @click="closeMenu"><CalendarVue />Evènements</RouterLink></li>
-          <li><RouterLink class="menu-link" to="/panier" @click="closeMenu"><ShoppingCartVue />Panier</RouterLink></li>
+		      <li class="mt-8"><RouterLink class="menu-link" to="/pageProduits" @click="closeMenu"><ShoppingBag /><p class="ml-10 font-inter text-base">Produits</p></RouterLink></li>
+		      <li><RouterLink class="menu-link" to="/favoris" @click="closeMenu"><Love /><p class="ml-10 font-inter text-base">Liste de Favoris</p></RouterLink></li>
+		      <li><RouterLink class="menu-link" to="/ajoutContenu" @click="closeMenu"><plus /><p class="ml-10 font-inter text-base">Ajouter du contenu</p></RouterLink></li>
+		      <li><RouterLink class="menu-link" to="/messagerie" @click="closeMenu"><Chat /><p class="ml-10 font-inter text-base">Messagerie</p></RouterLink></li>
+          <li><RouterLink class="menu-link" to="/pageRecettes" @click="closeMenu"><CookingBookVue /><p class="ml-10 font-inter text-base">Recettes</p></RouterLink></li>
+          <li><RouterLink class="menu-link" to="/forum" @click="closeMenu"><group /><p class="ml-10 font-inter text-base">Forum</p></RouterLink></li>
+          <li><RouterLink class="menu-link" to="/evenements" @click="closeMenu"><CalendarVue /><p class="ml-10 font-inter text-base">Evènements</p></RouterLink></li>
+          <li><RouterLink class="menu-link" to="/panier" @click="closeMenu"><ShoppingCartVue /><p class="ml-10 font-inter text-base">Panier</p></RouterLink></li>
 		    </ul>
 		  </nav>
     </div>
