@@ -12,14 +12,14 @@ import logo from '@/components/icons/logo/logo.vue';
        <h1 class="pt-0">A ne pas manquer</h1>
        <div class="relative  py-16 w-full md:w-1/2 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
         <div class="relative flex h-120 gap-4">
-            <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-3/5" data-carousel-item>
+          <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-11/12" data-carousel-item>
+                    <img src="../components/img/accueil/marché.webp" alt="Marché de Reims" class="mb-2">
+            </div>
+            <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-11/12" data-carousel-item>
                     <img src="../components/img/accueil/brocante.webp" alt="brocante" class="mb-2">
             </div>
-            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-3/5" data-carousel-item>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-11/12" data-carousel-item>
                     <img src="../components/img/accueil/cours.webp" alt="Cours de jardinage" class="mb-2">
-            </div>
-            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-3/5" data-carousel-item>
-                    <img src="../components/img/accueil/marché.webp" alt="Marché de Reims" class="mb-2">
             </div>
         </div>
     </div>
@@ -27,25 +27,77 @@ import logo from '@/components/icons/logo/logo.vue';
 
     <div>
         <p class="text-darkGreen text-x4l font-montserrat font-bold">Les profils les plus visités</p>
-    <div class="flex flex-wrap">
-  <div class="w-1/2 lg:max-w[100px] p-4">
-    <img src="src/components/img/accueil/accueil pdp/bernard.webp" alt="photo de profil de Bernard">
-  </div>
-  <div class="w-1/2 lg:max-w[100px] p-4">
-    <img src="src/components/img/accueil/accueil pdp/stephanieaccueil.webp" alt="photo de profil de Stéphanie">
-  </div>
-  <div class="w-1/2 lg:max-w[100px] p-4">
-    <img src="src/components/img/accueil/accueil pdp/casquette.webp" alt="Photo de profil">
-  </div>
-  <div class="w-1/2 lg:max-w[100px] p-4">
-    <img src="src/components/img/accueil/accueil pdp/rouge.webp" alt="photo de profil">
-  </div>
-  <div class="w-1/2 lg:max-w[100px] p-4">
-    <img src="src/components/img/accueil/accueil pdp/trait.webp" alt="photo de profil">
-  </div>
-</div>
+        <div class="relative  py-16 w-full md:w-1/2 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
+        <div class="relative flex h-120 gap-4">
+            <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
+                    <img src="../components/img/accueil/accueil pdp/bernard.webp" alt="Bernard" class="mb-2">
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
+                    <img src="../components/img/accueil/accueil pdp/casquette.webp" alt="Photo de profil" class="mb-2">
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
+                    <img src="../components/img/accueil/accueil pdp/rouge.webp" alt="Photo de profil" class="mb-2">
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
+                    <img src="../components/img/accueil/accueil pdp/stephanieaccueil.webp" alt="Photo de profil" class="mb-2">
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
+                    <img src="../components/img/accueil/accueil pdp/trait.webp" alt="Photo de profil" class="mb-2">
+            </div>
+        </div>
+    </div>
 </div>
 
+<div>
+        <p class="text-darkGreen text-x4l font-montserrat font-bold">Les favoris de la semaine</p>
+        <div class="relative  py-16 w-full md:w-1/2 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
+        <div class="relative flex h-120 gap-4">
+            <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
+                    <img src="../components/img/accueil/accueil favoris semaine/carottes.webp" alt="carottes" class="mb-2">
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
+                    <img src="../components/img/accueil/accueil favoris semaine/marche.webp" alt="marché" class="mb-2">
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
+                    <img src="../components/img/accueil/accueil favoris semaine/smoothieBowl.webp" alt="smoothie bowl" class="mb-2">
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
+                    <img src="../components/img/accueil/accueil favoris semaine/spaghetti.webp" alt="spaghetti" class="mb-2">
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
+                    <img src="../components/img/accueil/accueil favoris semaine/viande.webp" alt="viande" class="mb-2">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mb-16">
+        <p class="text-darkGreen text-x4l font-montserrat font-bold">Vos favoris</p>
+        <div class="relative  py-16 w-full md:w-1/2 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
+        <div class="relative flex h-120 gap-4">
+            <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/2" data-carousel-item>
+                    <img src="../components/img/accueil/accueil favoris/basilic.webp" alt="basilic" class="mb-2">
+                    <p class="font-inter font-light text-base uppercase mt-2">Plantes aromatiques</p>
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/2" data-carousel-item>
+                    <img src="../components/img/accueil/accueil favoris/lasagne.webp" alt="lasagne" class="mb-2">
+                    <p class="font-inter font-light text-base uppercase mt-2">Lasagnes en 20min</p>
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/2" data-carousel-item>
+                    <img src="../components/img/accueil/accueil favoris/oeufs.webp" alt="oeufs" class="mb-2">
+                    <p class="font-inter font-light text-base uppercase mt-2">Oeufs bio en plein air</p>
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/2" data-carousel-item>
+                    <img src="../components/img/accueil/accueil favoris/pain.webp" alt="pain" class="mb-2">
+                    <p class="font-inter font-light text-base uppercase mt-2">Pain au seigle</p>
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/2" data-carousel-item>
+                    <img src="../components/img/accueil/accueil favoris/smoothieBowl.webp" alt="smoothie bowl" class="mb-2">
+                    <p class="font-inter font-light text-base uppercase mt-2">Smoothie Bowl</p>
+            </div>
+          </div>
+    </div>
+</div>
 
 
 </template>
