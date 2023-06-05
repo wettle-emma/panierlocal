@@ -12,7 +12,7 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
 <template>
     <div>
     <img :src="urlImg"/>
-    <p class="font-dmSerifDisplay italic text-center text-lg">{{ nomArtiste }}</p>
+    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">{{ nameRecette }}</p>
     </div>
 
 </template>

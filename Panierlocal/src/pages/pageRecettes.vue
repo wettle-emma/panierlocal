@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { allProduits } from '@/backend';
-import ProduitCard from '@/components/ProduitCard.vue';
+import RecetteCard from '@/components/ProduitCard.vue';
 
 const listeProduits = await allProduits()
 </script>
@@ -9,11 +9,16 @@ const listeProduits = await allProduits()
     <h1>Recettes</h1>
     <h2 class="text-xl font-montserrat font-medium uppercase">Les plus populaires</h2>
 
-    <ul class="grid grid-cols-2 gap-6 mx-5 ">
+    <ul class="grid grid-cols-2 gap-6 mx-5 lg:grid-cols-4">
                     <li v-for="produits of listeProduits" v-bind="{...produits}" :v-key="produits.id">
                     <RouterLink :to="{ name: 'produit-id', params: {id: produits.id} }">
-                    <ProduitCard v-bind="{...produits}"/> 
+                    <RecetteCard v-bind="{...produits}"/> 
                     </RouterLink>
                 </li>
                 </ul>
+    <div>
+        <img src="../components/img/illustrations/Cooking-cuate 1.webp" alt="">
+        <RouterLink to="/ajoutRecette"><button class="w-50 rounded-x2l bg-midGreen p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Ajouter une recette</button></RouterLink>
+    </div>
+    
 </template>

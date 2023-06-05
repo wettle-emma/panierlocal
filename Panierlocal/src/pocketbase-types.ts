@@ -3,9 +3,10 @@
 */
 
 export enum Collections {
-	Astuce = "astuce",
-	Produit = "produit",
-	Recette = "recette",
+	Astuces = "astuces",
+	Evenements = "evenements",
+	Produits = "produits",
+	Recettes = "recettes",
 	Users = "users",
 }
 
@@ -33,7 +34,7 @@ export type AuthSystemFields<T = never> = {
 
 // Record types for each collection
 
-export enum AstuceProduitsOptions {
+export enum AstucesProduitsOptions {
 	"eau" = "eau",
 	"citron" = "citron",
 	"recipient" = "recipient",
@@ -46,26 +47,40 @@ export enum AstuceProduitsOptions {
 	"vinaigre blanc" = "vinaigre blanc",
 	"liquide vaisselle" = "liquide vaisselle",
 }
-export type AstuceRecord = {
-	name?: string
-	image?: string
+export type AstucesRecord = {
+	nameAstuce?: string
+	imageAstuce?: string
 	nbr_usages?: number
-	produits?: AstuceProduitsOptions[]
-	etape_1?: string
-	etape_2?: string
-	etape_3?: string
-	etape_4?: string
+	produits?: AstucesProduitsOptions[]
+	etape1astuce?: string
+	etape2astuce?: string
+	etape3astuce?: string
+	etape4astuce?: string
+	lienastuce?: RecordIdString
+	photoAstuce?: string
 }
 
-export type ProduitRecord = {
-	name?: string
-	image?: string
+export type EvenementsRecord = {
+	imageEvent?: string
+	nameEvent?: string
+	dateEvent?: string
+	heure?: string
+	adresseEvent?: string
+	tel?: string
+}
+
+export type ProduitsRecord = {
+	nameProduit?: string
+	imageProduit?: string
 	price?: number
 	adresse?: string
 	publier?: IsoDateString
+	lienproduit?: RecordIdString
+	photoProduit?: string
 }
 
-export enum RecetteIngredientsOptions {
+export enum RecettesIngredientscetteOptions {
+	"lait" = "lait",
 	"carottes" = "carottes",
 	"ail" = "ail",
 	"persil" = "persil",
@@ -81,7 +96,6 @@ export enum RecetteIngredientsOptions {
 	"huile" = "huile",
 	"paprika" = "paprika",
 	"curry" = "curry",
-	"lait" = "lait",
 	"basilic" = "basilic",
 	"ciboulette" = "ciboulette",
 	"yaourt" = "yaourt",
@@ -115,40 +129,45 @@ export enum RecetteIngredientsOptions {
 	"olives" = "olives",
 	"saucisson" = "saucisson",
 	"chorizo" = "chorizo",
+	"crème" = "crème",
+	"vinaigrette" = "vinaigrette",
 }
-export type RecetteRecord = {
-	name?: string
-	image?: string
+export type RecettesRecord = {
+	nameRecette?: string
+	imageRecette?: string
 	nbr_personnes?: number
-	ingredients?: RecetteIngredientsOptions[]
-	etape_1?: string
-	etape_2?: string
-	etape_3?: string
-	etape_4?: string
+	ingredientscette?: RecettesIngredientscetteOptions[]
+	etape1recette?: string
+	etape2recette?: string
+	etape3recette?: string
+	etape4recette?: string
+	lienrecette?: RecordIdString
+	photoRecette?: string
 }
 
-export type UsersRecord = {
-	mot_de_passe?: string
-}
+export type UsersRecord = never
 
 // Response types include system fields and match responses from the PocketBase API
-export type AstuceResponse = Required<AstuceRecord> & BaseSystemFields
-export type ProduitResponse = Required<ProduitRecord> & BaseSystemFields
-export type RecetteResponse = Required<RecetteRecord> & BaseSystemFields
+export type AstucesResponse<Texpand = unknown> = Required<AstucesRecord> & BaseSystemFields<Texpand>
+export type EvenementsResponse = Required<EvenementsRecord> & BaseSystemFields
+export type ProduitsResponse<Texpand = unknown> = Required<ProduitsRecord> & BaseSystemFields<Texpand>
+export type RecettesResponse<Texpand = unknown> = Required<RecettesRecord> & BaseSystemFields<Texpand>
 export type UsersResponse = Required<UsersRecord> & AuthSystemFields
 
 // Types containing all Records and Responses, useful for creating typing helper functions
 
 export type CollectionRecords = {
-	astuce: AstuceRecord
-	produit: ProduitRecord
-	recette: RecetteRecord
+	astuces: AstucesRecord
+	evenements: EvenementsRecord
+	produits: ProduitsRecord
+	recettes: RecettesRecord
 	users: UsersRecord
 }
 
 export type CollectionResponses = {
-	astuce: AstuceResponse
-	produit: ProduitResponse
-	recette: RecetteResponse
+	astuces: AstucesResponse
+	evenements: EvenementsResponse
+	produits: ProduitsResponse
+	recettes: RecettesResponse
 	users: UsersResponse
 }
