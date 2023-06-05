@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { allProduits } from '@/backend';
-import RecetteCard from '@/components/ProduitCard.vue';
+import { allRecettes } from '@/backend';
+import RecetteCard from '@/components/RecetteCard.vue';
 
-const listeProduits = await allProduits()
+const listeRecettes = await allRecettes()
 </script>
 
 <template>
@@ -10,9 +10,9 @@ const listeProduits = await allProduits()
     <h2 class="text-xl font-montserrat font-medium uppercase">Les plus populaires</h2>
 
     <ul class="grid grid-cols-2 gap-6 mx-5 lg:grid-cols-4">
-                    <li v-for="produits of listeProduits" v-bind="{...produits}" :v-key="produits.id">
-                    <RouterLink :to="{ name: 'produit-id', params: {id: produits.id} }">
-                    <RecetteCard v-bind="{...produits}"/> 
+                    <li v-for="recettes of listeRecettes" v-bind="{...recettes}" :v-key="recettes.id">
+                    <RouterLink :to="{ name: 'recette-id', params: {id: recettes.id} }">
+                    <RecetteCard v-bind="{...recettes}"/> 
                     </RouterLink>
                 </li>
                 </ul>

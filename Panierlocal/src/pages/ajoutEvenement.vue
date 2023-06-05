@@ -38,5 +38,6 @@
         </div>
     
     </div>
+    <RouterLink to=""><button class="w-52 rounded-x2l bg-midGreen p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Publier l'évènement</button></RouterLink>
 </div>
 </template>

@@ -1,15 +1,18 @@
 <script setup lang="ts">
 import { pb } from "@/backend"; 
-    import type { ProduitRecord, ProduitResponse, BaseSystemFields } from '@/pocketbase-types'; 
-    import { Produitrecords } from "@/backend";
+import type { ProduitRecord, ProduitResponse, BaseSystemFields } from '@/pocketbase-types'; 
 
-    // bug MaisonResponse
-    const props = defineProps<ProduitRecord & BaseSystemFields<null>>()
+const props: ProduitResponse = defineProps<ProduitResponse>()
 
-    const img0 = props.image?.[0]
-    const urlImg0 = img0 ? pb.getFileUrl(props, img0, { thumb: '100x250' }) : '/image-not-found.png'
-    console.log(urlImg0)
+const img0= props.photoProduit
+const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
+
 </script>
 
-<template> 
+<template>
+    <div>
+    <img :src="urlImg"/>
+    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">{{ nameProduit }}</p>
+    </div>
+
 </template>

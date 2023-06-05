@@ -1,16 +1,19 @@
 <script setup lang="ts">
 import { pb } from "@/backend"; 
 import type { AstuceRecord, AstuceResponse, BaseSystemFields } from '@/pocketbase-types'; 
-import { Astucerecords } from "@/backend"
 
-    // bug MaisonResponse
-    const props = defineProps<AstuceRecord & BaseSystemFields<null>>()
-   
-    const img0 = props.image?.[0]
-    const urlImg0 = img0 ? pb.getFileUrl(props, img0, { thumb: '100x250' }) : '/image-not-found.png'
-    console.log(urlImg0)
+const props: AstuceResponse = defineProps<AstuceResponse>()
+
+const img0= props.photoAstuce
+const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
+
 </script>
 
 <template>
-    
+    <div>
+    <img :src="urlImg"/>
+    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">{{ nameAstuce }}</p>
+    </div>
+
+</template>
 </template>

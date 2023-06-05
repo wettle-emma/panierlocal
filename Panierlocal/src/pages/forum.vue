@@ -87,5 +87,5 @@
     </div>
 
     <p class="font-bold text-x2l font-inter mx-auto ml-4">Vous avez une astuce a nous faire partagez ? Publiez la !</p>
-    <RouterLink to="/ajoutContenu"><button class="w-52 rounded-x2l bg-midGreen p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Ajouter une astuce</button></RouterLink>
+    <RouterLink to="/ajoutAstuce"><button class="w-52 rounded-x2l bg-midGreen p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Ajouter une astuce</button></RouterLink>
 </template>
