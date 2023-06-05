@@ -7,7 +7,7 @@
   <h2 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Ecologie</h2>
 
   <div class="relative pt-6 pb-12 ml-4 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
-        <div class="relative flex h-120 gap-4">
+        <div class="relative flex h-120 gap-2">
           <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-5/6" data-carousel-item>
                     <img src="../components/img/forum/ampoule.webp" alt="ampoule" class="mb-2">
                     <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Consommer moins d'énergie</p>
@@ -29,7 +29,7 @@
   <h2 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Maison</h2>
 
   <div class="relative pt-6 pb-12 ml-4 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
-        <div class="relative flex h-120 gap-4">
+        <div class="relative flex h-120 gap-2">
           <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-11/12" data-carousel-item>
                     <img src="../components/img/forum/produit.webp" alt="Produits vitre" class="mb-2">
                     <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Lave-vitre au citron</p>
@@ -51,7 +51,7 @@
   <h2 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Podcast</h2>
  
   <div class="relative pt-6 pb-12 ml-4 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
-        <div class="relative flex h-120 gap-4">
+        <div class="relative flex h-120 gap-2">
           <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/2" data-carousel-item>
                     <img src="../components/img/forum/sgm.webp" alt="ampoule" class="mb-2">
                     <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Podcast de Super Green Me</p>
@@ -70,7 +70,7 @@
     <h2 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Astuce</h2>
 
     <div class="relative pt-6 pb-12 ml-4 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
-        <div class="relative flex h-120 gap-4">
+        <div class="relative flex h-120 gap-2">
           <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/2" data-carousel-item>
                     <img src="../components/img/forum/vivrebio.webp" alt="ampoule" class="mb-2">
                     <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Vivre bio</p>

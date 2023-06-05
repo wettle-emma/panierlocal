@@ -6,7 +6,7 @@ import logoAccueil from '@/components/icons/logo/logoAccueil.vue';
 <template>
   <div class="pt-48">
     <logoAccueil class="mx-auto mb-16"/>
-    <p class="text-center text-x2l mx-10">Panier local permet à chacun d’agir à son échelle contre le gaspillage. Tout en agissant pour la planète. Panier local nous rapproche pour une cause qui en vaut la peine.</p>
+    <p class="text-center text-x2l mx-10"><span class="bold text-Pop">Panier local</span> permet à chacun d’agir à son échelle <span class="bold text-Pop">contre le gaspillage</span>. Tout en agissant pour la <span class="bold text-Pop">planète</span>. Panier local nous <span class="bold text-Pop">rapproche</span> pour une <span class="bold text-Pop">cause</span> qui en vaut la peine.</p>
   </div>
     
     <div class="mt-20 ml-4">

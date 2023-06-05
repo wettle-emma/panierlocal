@@ -5,7 +5,7 @@
 <template>
     <h1>Conditions générales de ventes</h1>
     <h2 class="text-lg font-semibold text-darkGreen py-4 px-3 lg:grid lg:grid-cols-3 gap-8">Voici les conditions générales de ventes chez Panier Local.</h2>
-    <p class="mx-3 mb-5">Les présentes conditions générales de vente (CGV) ont pour objet de définir les modalités de vente des produits alimentaires proposés sur le site internet Panier Local.</p>
+    <p class="mx-3 mb-5">Les présentes conditions générales de vente (CGV) ont pour objet de définir les modalités de vente des produits alimentaires proposés sur le site internet <span class="bold">Panier Local</span>.</p>
     <div class="space-y-8 mx-4 my-4 columns-1 gap-6 lg:columns-3 lg:col-span-4 lg:mx-0">
      <div class="space-y-2 lg:ml-5">
     <h3 class="font-inter text-lg font-semibold text-Pop">Produits</h3>
@@ -37,7 +37,7 @@
     </div>
     <div class="space-y-2 lg:ml-5">
     <h3 class="font-inter text-lg font-semibold text-Pop">Propriété intellectuelle</h3>
-    <p>Le contenu du site internet Panier Local est protégé par les lois de la propriété intellectuelle et est la propriété exclusive du vendeur.</p>
+    <p>Le contenu du site internet <span class="bold">Panier Local</span> est protégé par les lois de la propriété intellectuelle et est la propriété exclusive du vendeur.</p>
     </div>
     <div class="space-y-2 lg:ml-5">
     <h3 class="font-inter text-lg font-semibold text-Pop">Règlement des litiges</h3>
