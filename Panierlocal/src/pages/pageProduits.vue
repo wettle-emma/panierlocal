@@ -1,11 +1,17 @@
 <script setup lang="ts">
 import { allProduits } from '@/backend';
 import ProduitCard from '@/components/ProduitCard.vue';
+import Back from '@/components/icons/28px/Back.vue';
 
 const listeProduits = await allProduits()
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
     <h1>Produits</h1>
     <h2 class="text-xl font-montserrat font-medium uppercase">Les plus populaires</h2>
 

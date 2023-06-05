@@ -1,8 +1,13 @@
 <script setup lang="ts">
-
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
     <h1>Mentions Légales</h1>
     <div class="space-y-4 mx-4 mt-4 mb-8 columns-1 gap-6 lg:columns-3 lg:col-span-3 lg:mx-0">
     <p>Le site <span class="bold">Panier Local</span> est hébergé par o2switch, domicilié(e) à Chemin des Pardiaux, 63000 Clermont-Ferrand.</p>

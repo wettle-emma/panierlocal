@@ -1,7 +1,13 @@
 <script setup lang="ts">
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
     <h1>Messagerie</h1>
     <div class="ml-6 mt-2 mb-16 lg:mx-auto lg:w-1/2">
         <div class="flex">

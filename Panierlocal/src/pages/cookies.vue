@@ -1,8 +1,13 @@
 <script setup lang="ts">
-
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
     <h1 class="pt-40 pl-3 pb-5">Politique de cookies</h1>
     <h2 class="text-lg font-semibold text-darkGreen ml-4 lg:grid lg:grid-cols-2 gap-8">Chez Panier Local, vos données personnelles sont respectées. Votre sécurité est notre priorité. Voici donc les cookies que nous collectons</h2>
     <div class="space-y-4 mx-4 my-4 columns-1 gap-6 lg:columns-4 lg:col-span-4 lg:mx-0">

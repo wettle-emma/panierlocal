@@ -1,8 +1,13 @@
 <script setup lang="ts">
-
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
     <h1>Ajouter du contenu</h1>
     <h2 class="text-xl font-montserrat font-medium uppercase">Catégories</h2>
     <p class="text-[13px] font-inter text-grey ml-6">Cliquer sur la catégorie de votre annonce</p>

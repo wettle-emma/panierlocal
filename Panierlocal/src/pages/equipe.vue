@@ -1,8 +1,12 @@
 <script setup lang="ts">
-
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
 
     <h1>Qui sommes-nous ?</h1>
     <h2 class="text-lg font-bold text-darkGreen pl-4 pb-10">Panier Local, c'est une équipe engagée et proche de ses clients.</h2>

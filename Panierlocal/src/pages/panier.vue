@@ -1,7 +1,13 @@
 <script setup lang="ts">
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
     <h1>Panier</h1>
     <div class="mx-auto grid grid-cols-1 gap-4 lg:grid lg:grid-cols-3 lg:mx-auto">
 

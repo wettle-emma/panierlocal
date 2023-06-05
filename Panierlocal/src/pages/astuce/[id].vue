@@ -7,10 +7,16 @@ import trois from "@/components/icons/trois.vue";
 import quatre from "@/components/icons/quatre.vue";
 import { pb } from "@/backend"
 import { RouterLink } from 'vue-router';
+import Back from "@/components/icons/28px/Back.vue";
 
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
   <h1>{{ astuce.nameAstuce}}</h1>
     <img src="" alt="">
     <div class="flex">

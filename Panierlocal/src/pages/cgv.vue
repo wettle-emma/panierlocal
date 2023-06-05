@@ -1,8 +1,13 @@
 <script setup lang="ts">
-
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
     <h1>Conditions générales de ventes</h1>
     <h2 class="text-lg font-semibold text-darkGreen py-4 px-3 lg:grid lg:grid-cols-3 gap-8">Voici les conditions générales de ventes chez Panier Local.</h2>
     <p class="mx-3 mb-5">Les présentes conditions générales de vente (CGV) ont pour objet de définir les modalités de vente des produits alimentaires proposés sur le site internet <span class="bold">Panier Local</span>.</p>

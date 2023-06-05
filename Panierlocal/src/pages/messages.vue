@@ -1,8 +1,13 @@
 <script setup lang="ts">
-
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
     <h1 class="font-montserrat font-medium text-lg pt-28 lg:ml-6">Bernard Meunier</h1>
     <div class="h-px w-auto bg-grey mx-4 "></div>
     <p class="text-center mx-auto font-inter font-medium text-base text-grey mt-40">24 avril 12:48</p>

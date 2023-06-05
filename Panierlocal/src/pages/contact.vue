@@ -2,9 +2,15 @@
 import Phone from '@/components/icons/28px/phone.vue';
 import Envelope from '@/components/icons/28px/Envelope.vue';
 import MapMarkerVue from '@/components/icons/28px/Map Marker.vue';
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
+  <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
     <h1>Contact</h1>
 
     <div class="lg:grid lg:grid-cols-2 lg:gap-4">

@@ -3,13 +3,18 @@ import Clock from '@/components/icons/28px/Clock.vue';
 import Calendar from '@/components/icons/28px/calendar.vue';
 import MapMarker from '@/components/icons/28px/Map Marker.vue';
 import Phone from '@/components/icons/28px/phone.vue';
-
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
-<div class="my-8 px-2 lg:grid lg:grid-cols-2">
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
 
-    <img class="pt-32 lg:w-3/4" src="../components/img/pdp + events/Rectangle 43.webp" />
+<div class="pt-0 mb-8 px-2 lg:grid lg:grid-cols-2">
+
+    <img class="pt-20 lg:w-3/4" src="../components/img/pdp + events/Rectangle 43.webp" />
 
     <div>
     <h1 class="pt-8 uppercase font-inter text-x2l text-black font-normal lg:pt-20">Cours de jardinage</h1>

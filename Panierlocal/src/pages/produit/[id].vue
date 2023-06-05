@@ -7,11 +7,16 @@ import Info from '@/components/icons/28px/Info.vue';
 import CookingBook from '@/components/icons/28px/CookingBook.vue';
 import { pb } from "@/backend"
 import { RouterLink } from 'vue-router';
-
+import Back from '@/components/icons/28px/Back.vue';
 
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+        
     <h1>{{ produit.nameProduit}}</h1>
     <img src="" alt="">
     <div class="flex">

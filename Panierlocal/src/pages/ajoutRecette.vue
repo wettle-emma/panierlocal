@@ -1,7 +1,13 @@
 <script setup lang="ts">
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
     <h1>Ajouter une recette</h1>
     <div class="ml-4 mb-10 lg:grid lg:grid-cols-2">
         <div>

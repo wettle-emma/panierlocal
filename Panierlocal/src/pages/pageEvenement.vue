@@ -1,7 +1,13 @@
 <script setup lang="ts">
+import Back from '@/components/icons/28px/Back.vue';
 </script>
 
 <template>
+    <a class="pt-24 flex ml-4" href="javascript:history.back()">
+        <back />
+        <p class="font-inter font-lg">Retour</p>
+        </a>
+
     <h1>Evènements</h1>
     <p class="font-inter font-xl uppercase text-center">Les évènements écologiques proches de chez vous</p>
     <p class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Mai 2023</p>
