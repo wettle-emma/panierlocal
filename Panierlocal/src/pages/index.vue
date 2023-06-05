@@ -8,9 +8,9 @@ import logo from '@/components/icons/logo/logo.vue';
     <p class="text-center text-x2l mx-10">Panier local permet à chacun d’agir à son échelle contre le gaspillage. Tout en agissant pour la planète. Panier local nous rapproche pour une cause qui en vaut la peine.</p>
   </div>
     
-    <div class="mt-20">
+    <div class="mt-20 ml-4">
        <h1 class="pt-0">A ne pas manquer</h1>
-       <div class="relative  py-16 w-full md:w-1/2 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
+       <div class="relative pt-6 pb-16 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
         <div class="relative flex h-120 gap-4">
           <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-11/12" data-carousel-item>
                     <img src="../components/img/accueil/marché.webp" alt="Marché de Reims" class="mb-2">
@@ -25,9 +25,9 @@ import logo from '@/components/icons/logo/logo.vue';
     </div>
     </div>
 
-    <div>
+    <div class="ml-4 lg:mb-16">
         <p class="text-darkGreen text-x4l font-montserrat font-bold">Les profils les plus visités</p>
-        <div class="relative  py-16 w-full md:w-1/2 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
+        <div class="relative pt-6 pb-16 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
         <div class="relative flex h-120 gap-4">
             <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
                     <img src="../components/img/accueil/accueil pdp/bernard.webp" alt="Bernard" class="mb-2">
@@ -48,9 +48,9 @@ import logo from '@/components/icons/logo/logo.vue';
     </div>
 </div>
 
-<div>
+<div class="ml-4 lg:mb-16">
         <p class="text-darkGreen text-x4l font-montserrat font-bold">Les favoris de la semaine</p>
-        <div class="relative  py-16 w-full md:w-1/2 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
+        <div class="relative pt-6 pb-16 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
         <div class="relative flex h-120 gap-4">
             <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
                     <img src="../components/img/accueil/accueil favoris semaine/carottes.webp" alt="carottes" class="mb-2">
@@ -71,9 +71,9 @@ import logo from '@/components/icons/logo/logo.vue';
     </div>
 </div>
 
-<div class="mb-16">
+<div class="mb-16 ml-4 lg:mb-16">
         <p class="text-darkGreen text-x4l font-montserrat font-bold">Vos favoris</p>
-        <div class="relative  py-16 w-full md:w-1/2 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
+        <div class="relative pt-6 pb-16 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
         <div class="relative flex h-120 gap-4">
             <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/2" data-carousel-item>
                     <img src="../components/img/accueil/accueil favoris/basilic.webp" alt="basilic" class="mb-2">
