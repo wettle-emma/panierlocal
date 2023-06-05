@@ -10,17 +10,19 @@ import logo from '@/components/icons/logo/logo.vue';
     
     <div class="mt-20">
        <h1 class="pt-0">A ne pas manquer</h1>
-       <div class="carousel carousel-center rounded-box">
-        <div class="carousel-item">
-            <img src="src/components/img/accueil/brocante.webp" alt="brocante">
+       <div class="relative  py-16 w-full md:w-1/2 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
+        <div class="relative flex h-120 gap-4">
+            <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-3/5" data-carousel-item>
+                    <img src="../components/img/accueil/brocante.webp" alt="brocante" class="mb-2">
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-3/5" data-carousel-item>
+                    <img src="../components/img/accueil/cours.webp" alt="Cours de jardinage" class="mb-2">
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-3/5" data-carousel-item>
+                    <img src="../components/img/accueil/marché.webp" alt="Marché de Reims" class="mb-2">
+            </div>
         </div>
-        <div class="carousel-item">
-            <img src="src/components/img/accueil/marché.webp" alt="marché de Reims">
-        </div>
-        <div class="carousel-item">
-            <img src="src/components/img/accueil/cours.webp" alt="cours de jardinage">
-        </div>
-       </div>
+    </div>
     </div>
 
     <div>
