@@ -21,7 +21,7 @@
 <template>
   <header class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-white px-6 py-5 transition-all duration-300 ease-in-out">
     <div class="flex items-center">
-      <RouterLink to="/index">
+      <RouterLink to="/">
         <logoVue />
       </RouterLink>
     </div>
@@ -56,7 +56,7 @@
 		      <li><RouterLink class="menu-link" to="/messagerie" @click="closeMenu"><Chat /><p class="ml-10 font-inter text-base">Messagerie</p></RouterLink></li>
           <li><RouterLink class="menu-link" to="/pageRecettes" @click="closeMenu"><CookingBookVue /><p class="ml-10 font-inter text-base">Recettes</p></RouterLink></li>
           <li><RouterLink class="menu-link" to="/forum" @click="closeMenu"><group /><p class="ml-10 font-inter text-base">Forum</p></RouterLink></li>
-          <li><RouterLink class="menu-link" to="/evenements" @click="closeMenu"><CalendarVue /><p class="ml-10 font-inter text-base">Evènements</p></RouterLink></li>
+          <li><RouterLink class="menu-link" to="/pageEvenement" @click="closeMenu"><CalendarVue /><p class="ml-10 font-inter text-base">Evènements</p></RouterLink></li>
           <li><RouterLink class="menu-link" to="/panier" @click="closeMenu"><ShoppingCartVue /><p class="ml-10 font-inter text-base">Panier</p></RouterLink></li>
 		    </ul>
 		  </nav>

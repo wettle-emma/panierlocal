@@ -1,16 +1,18 @@
 <script setup lang="ts">
 import { pb } from "@/backend"; 
 import type { RecetteRecord, RecetteResponse, BaseSystemFields } from '@/pocketbase-types'; 
-import { Recetterecords } from "@/backend"
 
-    const props = defineProps<RecetteRecord & BaseSystemFields<null>>()
-    
+const props: RecetteResponse = defineProps<RecetteResponse>()
 
-    const img0 = props.image?.[0]
-    const urlImg0 = img0 ? pb.getFileUrl(props, img0, { thumb: '100x250' }) : '/image-not-found.png'
-    console.log(urlImg0)
+const img0= props.photoRecette
+const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
+
 </script>
 
 <template>
-    
+    <div>
+    <img :src="urlImg"/>
+    <p class="font-dmSerifDisplay italic text-center text-lg">{{ nomArtiste }}</p>
+    </div>
+
 </template>
