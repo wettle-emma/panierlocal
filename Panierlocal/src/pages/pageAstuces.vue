@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { allAstuces } from '@/backend';
-import astuceCard from '@/components/astuceCard.vue';
+import astuceCard from '@/components/AstuceCard.vue';
 import Back from '@/components/icons/28px/Back.vue';
 
 const listeAstuces = await allAstuces()
@@ -16,9 +16,9 @@ const listeAstuces = await allAstuces()
     <h2 class="text-xl font-montserrat font-medium uppercase">Les plus populaires</h2>
 
     <ul class="grid grid-cols-2 gap-6 mx-5 lg:grid-cols-4">
-                    <li v-for="astuces of listeAstuces" v-bind="{...astuces}">
+                    <li v-for="astuces of listeAstuces" v-bind="{...astuces}" >
                     <RouterLink :to="{ name: 'astuces-id', params: {id: astuces.id} }">
-                    <AstuceCard v-bind="{...astuces}"/> 
+                    <astuceCard v-bind="{...astuces}"/> 
                     </RouterLink>
                 </li>
                 </ul>

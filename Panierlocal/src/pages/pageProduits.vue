@@ -16,8 +16,8 @@ const listeProduits = await allProduits()
     <h2 class="text-xl font-montserrat font-medium uppercase">Les plus populaires</h2>
 
     <ul class="grid grid-cols-2 gap-6 mx-5 lg:grid-cols-4">
-                    <li v-for="produits of listeProduits" v-bind="{...produits}" :v-key="produits.id">
-                    <RouterLink :to="{ name: 'produit-id', params: {id: produits.id} }">
+                    <li v-for="produits of listeProduits" v-bind="{...produits}">
+                    <RouterLink :to="{ name: 'produits-id', params: {id: produits.id} }">
                     <ProduitCard v-bind="{...produits}"/> 
                     </RouterLink>
                 </li>

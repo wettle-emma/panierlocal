@@ -8,7 +8,7 @@ export async function allProduits() {
 }
 
 export async function allAstuces() {
-    const astuceRecords = await pb.collection('astuces').getFullList();
+    const astuceRecords = await pb.collection('astuces').getFullList<AstucesResponse>({'$autoCancel':false,});
     return astuceRecords;
 }
 
@@ -31,7 +31,7 @@ export async function oneRecette(id: string) {
 };
 
 export async function oneAstuce(id: string) {
-    return await pb.collection('astuces').getOne<AstucesResponse>(id);
+    return await pb.collection('astuces').getOne<AstucesResponse>(id, {'$autoCancel':false,});
 };
 
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { pb } from "@/backend"; 
-import type { ProduitsRecord, ProduitsResponse, BaseSystemFields } from '@/pocketbase-types'; 
+import type { ProduitsResponse } from '@/pocketbase-types'; 
 
 const props: ProduitsResponse = defineProps<ProduitsResponse>()
 

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { pb } from '@/backend';
 import type { AstucesResponse } from '@/pocketbase-types'; 
 import EmptyHeart from "@/components/icons/50px/EmptyHeart.vue";
 import share from "@/components/icons/50px/share.vue";
@@ -10,7 +11,7 @@ import Back from "@/components/icons/28px/Back.vue";
 
 const props: AstucesResponse = defineProps<AstucesResponse>()
 
-const img0= props.photoAstuce
+const img0= props.imageAstuce
 const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
 </script>
 
@@ -21,27 +22,27 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
         </a>
 
   <h1>{{ nameAstuce }}</h1>
-    <img :src="urlImg1">
+    <img :src="urlImg">
     <div class="flex">
         <RouterLink to="/favoris"><EmptyHeart /></RouterLink>
         <share />
         <div><p>Proposée par Stéphanie</p><img src="../components/img/pdp + events/stephanie.webp" alt=""></div>
     </div>
 
-    <h2 class="font-inter font-bold text-x2l text-center">Pour {{ astuces.nbr_usages }} usages</h2>
+    <h2 class="font-inter font-bold text-x2l text-center">Pour {{ nbr_usages }} usages</h2>
     <h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Produits nécessaires</h3>
-    <p>{{ astuces.produits }}</p>
+    <p>{{ produits }}</p>
    
     <h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Etapes</h3>
     <div>
     <un />
-    <p>{{ astuces.etape1astuce }}</p>
+    <p>{{ etape1astuce }}</p>
     <deux />
-    <p>{{ astuces.etape2astuce }}</p>
+    <p>{{ etape2astuce }}</p>
     <trois />
-    <p>{{ astuces.etape3astuce }}</p>
+    <p>{{ etape3astuce }}</p>
     <quatre />
-    <p>{{ astuces.etape4astuce }}</p>
+    <p>{{ etape4astuce }}</p>
     </div>
 
     <h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">D'autres astuces pour la maison</h3>

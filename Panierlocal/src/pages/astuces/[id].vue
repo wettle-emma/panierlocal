@@ -7,9 +7,9 @@ import astuceComposant from "@/components/astuceComposant.vue";
 
 const props = defineProps<{id: string}>();
 const astuces = await oneAstuce(props.id);
-const listeAstuces = await allAstuces()
+// const listeAstuces = await allAstuces()
 
-const urlImg1= pb.files.getUrl(astuces, astuces.imageAstuce)
+// const urlImg1= pb.files.getUrl(astuces, astuces.imageAstuce)
 </script>
 
 <template>

@@ -16,8 +16,8 @@ const listeRecettes = await allRecettes()
     <h2 class="text-xl font-montserrat font-medium uppercase">Les plus populaires</h2>
 
     <ul class="grid grid-cols-2 gap-6 mx-5 lg:grid-cols-4">
-                    <li v-for="recettes of listeRecettes" v-bind="{...recettes}" :v-key="recettes.id">
-                    <RouterLink :to="{ name: 'recette-id', params: {id: recettes.id} }">
+                    <li v-for="recettes of listeRecettes" v-bind="{...recettes}">
+                    <RouterLink :to="{ name: 'recettes-id', params: {id: recettes.id} }">
                     <RecetteCard v-bind="{...recettes}"/> 
                     </RouterLink>
                 </li>
