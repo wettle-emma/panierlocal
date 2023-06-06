@@ -8,7 +8,7 @@
 </script>
 
 <template>
-    <footer class="lg:grid lg:grid-cols-4 gap-8">
+    <footer class=" bg-lightGreen lg:grid lg:grid-cols-4 gap-8">
     <nav class="space-y-8 mx-4 my-4 columns-2 gap-8 lg:columns-4 lg:col-span-4 lg:mx-0">
       <div class="space-y-2 lg:ml-5">
         <h3 class="font-inter font-semibold text-base">À propos</h3>

@@ -8,6 +8,9 @@
    p {
     @apply text-black text-base font-inter
    }
+   main {
+    @apply bg-lightGreen
+   }
 }
 
 @layer components {

@@ -19,7 +19,7 @@
 </script>
 
 <template>
-  <header class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-white px-6 py-5 transition-all duration-300 ease-in-out">
+  <header class="fixed z-10 flex w-full translate-y-0 items-stretch justify-between bg-lightGreen px-6 py-5 transition-all duration-300 ease-in-out">
     <div class="flex items-center">
       <RouterLink to="/">
         <logoVue />

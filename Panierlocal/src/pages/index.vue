@@ -31,7 +31,7 @@ import logoAccueil from '@/components/icons/logo/logoAccueil.vue';
         <div class="relative pt-6 pb-16 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
         <div class="relative flex h-120 gap-4">
             <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
-                    <img src="../components/img/accueil/accueil pdp/bernard.webp" alt="Bernard" class="mb-2">
+                   <RouterLink to="/profil1"><img src="../components/img/accueil/accueil pdp/bernard.webp" alt="Bernard" class="mb-2"></RouterLink>
             </div>
             <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/5" data-carousel-item>
                     <img src="../components/img/accueil/accueil pdp/casquette.webp" alt="Photo de profil" class="mb-2">
