@@ -74,7 +74,8 @@ import back from '@/components/icons/28px/Back.vue';
 
 </div>
   <div class=" ">
-     <router />
-    <p class="text-Pop font-bold py-2 pr-6 text-right text-base underline">En voir plus</p>
+     <RouterLink to="/pageProduits">
+       <p class="text-Pop font-bold py-2 pr-6 text-right text-base underline">En voir plus</p>
+     </RouterLink>
   </div>
 </template>

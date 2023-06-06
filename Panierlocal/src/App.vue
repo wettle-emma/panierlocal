@@ -14,7 +14,9 @@
 <template>
   <HeaderPage />
   <main>
-  <RouterView />
-  </main>
+    <Suspense>
+     <RouterView />
+    </Suspense>
+</main>
   <FooterPage />
 </template>

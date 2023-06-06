@@ -67,8 +67,9 @@ import back from '@/components/icons/28px/Back.vue';
 
 </div>
   <div class=" ">
-     <router />
+     <RouterLink to="/pageRecettes">
     <p class="text-Pop font-bold py-2 pr-6 text-right text-base underline">En voir plus</p>
+    </RouterLink>
   </div>
 
   <h3 class="font-inter text-x2l pb-4 ml-4">Mes astuces</h3>
@@ -94,8 +95,9 @@ import back from '@/components/icons/28px/Back.vue';
     </div>
 
   <div class=" ">
-     <router />
-    <p class="text-Pop font-bold py-2 pr-6 text-right text-base underline">En voir plus</p>
+     <RouterLink to="/pageAstuces">
+      <p class="text-Pop font-bold py-2 pr-6 text-right text-base underline">En voir plus</p>
+     </RouterLink>
   </div>
 
   <div class="flex">

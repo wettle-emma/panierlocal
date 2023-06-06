@@ -1,14 +1,17 @@
 <script setup lang="ts">
+import type { AstucesResponse } from '@/pocketbase-types'; 
 import EmptyHeart from "@/components/icons/50px/EmptyHeart.vue";
 import share from "@/components/icons/50px/share.vue";
 import un from "@/components/icons/un.vue";
 import deux from "@/components/icons/deux.vue";
 import trois from "@/components/icons/trois.vue";
 import quatre from "@/components/icons/quatre.vue";
-import { pb } from "@/backend"
-import { RouterLink } from 'vue-router';
 import Back from "@/components/icons/28px/Back.vue";
 
+const props: AstucesResponse = defineProps<AstucesResponse>()
+
+const img0= props.photoAstuce
+const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
 </script>
 
 <template>
@@ -17,28 +20,28 @@ import Back from "@/components/icons/28px/Back.vue";
         <p class="font-inter font-lg">Retour</p>
         </a>
 
-  <h1>{{ astuce.nameAstuce}}</h1>
-    <img src="" alt="">
+  <h1>{{ nameAstuce }}</h1>
+    <img :src="urlImg1">
     <div class="flex">
         <RouterLink to="/favoris"><EmptyHeart /></RouterLink>
         <share />
         <div><p>Proposée par Stéphanie</p><img src="../components/img/pdp + events/stephanie.webp" alt=""></div>
     </div>
 
-    <h2 class="font-inter font-bold text-x2l text-center">Pour {{ astuce.nbr_usages }} usages</h2>
+    <h2 class="font-inter font-bold text-x2l text-center">Pour {{ astuces.nbr_usages }} usages</h2>
     <h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Produits nécessaires</h3>
-    <p>{{ astuce.produits }}</p>
+    <p>{{ astuces.produits }}</p>
    
     <h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Etapes</h3>
     <div>
     <un />
-    <p>{{ astuce.etape1astuce }}</p>
+    <p>{{ astuces.etape1astuce }}</p>
     <deux />
-    <p>{{ astuce.etape2astuce }}</p>
+    <p>{{ astuces.etape2astuce }}</p>
     <trois />
-    <p>{{ astuce.etape3astuce }}</p>
+    <p>{{ astuces.etape3astuce }}</p>
     <quatre />
-    <p>{{ astuce.etape4astuce }}</p>
+    <p>{{ astuces.etape4astuce }}</p>
     </div>
 
     <h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">D'autres astuces pour la maison</h3>

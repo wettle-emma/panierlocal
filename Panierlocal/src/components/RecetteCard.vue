@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { pb } from "@/backend"; 
-import type { RecetteRecord, RecetteResponse, BaseSystemFields } from '@/pocketbase-types'; 
+import type { RecettesRecord, RecettesResponse, BaseSystemFields } from '@/pocketbase-types'; 
 
-const props: RecetteResponse = defineProps<RecetteResponse>()
+const props: RecettesResponse = defineProps<RecettesResponse>()
 
 const img0= props.photoRecette
 const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })

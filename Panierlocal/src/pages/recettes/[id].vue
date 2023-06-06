@@ -17,7 +17,7 @@ import Back from "@/components/icons/28px/Back.vue";
         <p class="font-inter font-lg">Retour</p>
         </a>
 
-  <h1>{{ recette.nameRecette}}</h1>
+  <h1>{{ recettes.nameRecette}}</h1>
     <img src="" alt="">
     <div class="flex">
         <RouterLink to="/favoris"><EmptyHeart /></RouterLink>
@@ -25,20 +25,20 @@ import Back from "@/components/icons/28px/Back.vue";
         <div><p>Proposée par Stéphanie</p><img src="../components/img/pdp + events/stephanie.webp" alt=""></div>
     </div>
 
-    <h2 class="font-inter font-bold text-x2l text-center">Pour {{ recette.nbr_personnes }} personnes</h2>
+    <h2 class="font-inter font-bold text-x2l text-center">Pour {{ recettes.nbr_personnes }} personnes</h2>
     <h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Ingrédients</h3>
-    <p>{{ recette.ingredientscette }}</p>
+    <p>{{ recettes.ingredientscette }}</p>
    
     <h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Etapes</h3>
     <div>
     <un />
-    <p>{{ recette.etape1recette }}</p>
+    <p>{{ recettes.etape1recette }}</p>
     <deux />
-    <p>{{ recette.etape2recette }}</p>
+    <p>{{ recettes.etape2recette }}</p>
     <trois />
-    <p>{{ recette.etape3recette }}</p>
+    <p>{{ recettes.etape3recette }}</p>
     <quatre />
-    <p>{{ recette.etape4recette }}</p>
+    <p>{{ recettes.etape4recette }}</p>
     </div>
 
     <h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">D'autres recettes</h3>

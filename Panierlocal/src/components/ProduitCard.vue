@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { pb } from "@/backend"; 
-import type { ProduitRecord, ProduitResponse, BaseSystemFields } from '@/pocketbase-types'; 
+import type { ProduitsRecord, ProduitsResponse, BaseSystemFields } from '@/pocketbase-types'; 
 
-const props: ProduitResponse = defineProps<ProduitResponse>()
+const props: ProduitsResponse = defineProps<ProduitsResponse>()
 
 const img0= props.photoProduit
 const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })

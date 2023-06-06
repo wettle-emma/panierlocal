@@ -16,8 +16,8 @@ import Back from '@/components/icons/28px/Back.vue';
         <back />
         <p class="font-inter font-lg">Retour</p>
         </a>
-        
-    <h1>{{ produit.nameProduit}}</h1>
+
+    <h1>{{ produits.nameProduit}}</h1>
     <img src="" alt="">
     <div class="flex">
         <RouterLink to="/favoris"><EmptyHeart /></RouterLink>
@@ -26,9 +26,9 @@ import Back from '@/components/icons/28px/Back.vue';
     </div>
 
     <ul>
-        <li><Euro />{{ produit.price }}€/kilo</li>
-        <li><MapMarker />{{ produit.adresse }}</li>
-        <li><Info />Publié par {{  }} le {{ produit.publier }}</li>
+        <li><Euro />{{ produits.price }}€/kilo</li>
+        <li><MapMarker />{{ produits.adresse }}</li>
+        <li><Info />Publié par {{  }} le {{ produits.publier }}</li>
         <li><CookingBook />Idée recettes avec des carottes</li>
     </ul>
 
