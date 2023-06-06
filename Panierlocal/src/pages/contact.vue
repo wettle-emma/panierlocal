@@ -34,22 +34,22 @@ import Back from '@/components/icons/28px/Back.vue';
         <form class="flex flex-col py-10 px-5 lg:mx-2" action="#">
           
           <div class="mb-4">
-            <input class="w-full text-black border-0 mb-1" type="text" name="votre-nom" placeholder="Nom" required>
+            <input class="w-full text-black border-0 mb-1 bg-lightGreen" type="text" name="votre-nom" placeholder="Nom" required>
             <div class="block h-px w-full bg-black my-1"></div>
           </div>
 
           <div class="mb-4">
-            <input class="w-full text-black border-0 mb-1" type="text" name="votre-prénom" placeholder="Prénom" required>
+            <input class="w-full text-black border-0 mb-1 bg-lightGreen" type="text" name="votre-prénom" placeholder="Prénom" required>
             <div class="block h-px w-full bg-black my-1"></div>
           </div>
 
           <div class="mb-4">
-            <input class="w-full text-black border-0 mb-1" type="email" name="votre-email" placeholder="Email" required>
+            <input class="w-full text-black border-0 mb-1 bg-lightGreen" type="email" name="votre-email" placeholder="Email" required>
             <div class="block h-px w-full bg-black my-1"></div>
           </div>
 
           <div class="mb-4">
-            <textarea class="w-full text-black border-0 mb-1" name="Message" required>Message</textarea>
+            <textarea class="w-full text-black border-0 mb-1 bg-lightGreen" name="Message" required>Message</textarea>
             <div class="block h-px w-full bg-black my-1"></div>
           </div>
 

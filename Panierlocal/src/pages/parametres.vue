@@ -40,7 +40,7 @@ import Back from '@/components/icons/28px/Back.vue';
       <div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 flex items-center justify-center"><p class="font-inter font-semibold text-xl text-center">Supprimer un produit</p></div>
       <RouterLink to="/favoris"><div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 flex items-center justify-center"><p class="font-inter font-semibold text-xl text-center">Favoris</p></div></RouterLink>
       <RouterLink to="/messagerie"><div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l mx-auto mt-4 flex items-center justify-center"><p class="font-inter font-semibold text-xl text-center">Messagerie</p></div></RouterLink>
-      <RouterLink to="/ajoutContenu"><button class="w-40 rounded-x2l bg-midGreen p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Ajouter un contenu</button></RouterLink>
+      <RouterLink to="/ajoutContenu" class="flex justify-center"><button class="w-auto h-auto rounded-x2l bg-midGreen px-12 py-2 mt-6 mb-10 text-x2l font-inter bold text-black uppercase">Ajouter un contenu</button></RouterLink>
     </div>
   </div>
   

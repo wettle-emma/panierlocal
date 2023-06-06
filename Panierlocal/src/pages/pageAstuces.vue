@@ -13,7 +13,7 @@ const listeAstuces = await allAstuces()
         </a>
 
     <h1>Astuces</h1>
-    <h2 class="text-xl font-montserrat font-medium uppercase">Les plus populaires</h2>
+    <h2 class="text-xl font-montserrat font-medium uppercase ml-6">Les plus populaires</h2>
 
     <ul class="grid grid-cols-2 gap-6 mx-5 lg:grid-cols-4">
                     <li v-for="astuces of listeAstuces" v-bind="{...astuces}" >
@@ -22,9 +22,9 @@ const listeAstuces = await allAstuces()
                     </RouterLink>
                 </li>
                 </ul>
-    <div>
+    <div class="my-8 mx-auto lg:grid lg:grid-cols-2" >
         <img src="../components/img/illustrations/Instruction manual-rafiki 1.webp" alt="">
-        <RouterLink to="/ajoutAstuce"><button class="w-50 rounded-x2l bg-midGreen p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Ajouter une astuce</button></RouterLink>
+        <RouterLink to="/ajoutAstuce" class="flex justify-center items-center"><button class="w-auto h-12 px-8 py-4 rounded-x2l bg-midGreen text-x2l font-inter bold text-black uppercase">Ajouter une astuce</button></RouterLink>
     </div>
     
 </template>

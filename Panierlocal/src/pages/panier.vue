@@ -143,7 +143,7 @@ import Back from '@/components/icons/28px/Back.vue';
 
 </div>
 
-<div class="bg-white pb-12 mt-8 lg:w-1/2 lg:mx-auto">
+<div class=" pb-12 mt-8 lg:w-1/2 lg:mx-auto">
 
 <div class="border mx-auto border-lightGray w-2/3"></div>
 
@@ -158,7 +158,7 @@ import Back from '@/components/icons/28px/Back.vue';
     </div>
     
   <div class="flex justify-center items-center mb-6 mx-6 md:w-1/2 md:m-auto md:mb-12 lg:m-auto lg:w-2/3">
-    <RouterLink to="/payer"><button class="w-50 rounded-x2l bg-Pop p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Acheter</button></RouterLink>
+    <RouterLink to="/payer"><button class="w-auto h-auto rounded-x2l bg-Pop px-8 py-4 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Acheter</button></RouterLink>
 
 </div>
 </div>

@@ -48,26 +48,22 @@ import back from '@/components/icons/28px/Back.vue';
 
       <h3 class="font-inter text-x2l pb-4 ml-4">Produits vendus par Bernard</h3>
       <div class="ml-4 overflow-y-hidden" data-carousel="slide">
-        <div class="flex gap-1 lg:gap-0">
-            <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-screen" data-carousel-item>
-                    <img src="../components/img/favoris/carottes.webp" alt="carottes" class="w-4/5">
-                    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Lot de carotte</p>
+        <div class="flex gap-8 lg:gap-4">
+            <div  class="flex-none duration-700 ease-in-out flex-shrink-0" data-carousel-item>
+                    <img src="../components/img/favoris/carottes.webp" alt="carottes" class="">
+                    <p class="text-darkGreen font-inter font-light uppercase text-base mt-1">Lot de carotte</p>
             </div>
-            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-screen" data-carousel-item>
-                    <img src="../components/img/favoris/tomate.webp" alt="tomate cerise" class="w-4/5">
-                    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Tomate cerise</p>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0" data-carousel-item>
+                    <img src="../components/img/favoris/tomate.webp" alt="tomate cerise" class="">
+                    <p class="text-darkGreen font-inter font-light uppercase text-base mt-1">Tomate cerise</p>
             </div>
-            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-screen" data-carousel-item>
-                    <img src="../components/img/favoris/oeufs.webp" alt="oeufs" class="w-4/5">
-                    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Oeufs bio en plein air</p>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0" data-carousel-item>
+                    <img src="../components/img/favoris/oeufs.webp" alt="oeufs" class="">
+                    <p class="text-darkGreen font-inter font-light uppercase text-base mt-1">Oeufs bio en plein air</p>
             </div>
-            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-screen" data-carousel-item>
-                    <img src="../components/img/favoris/basilic.webp" alt="basilic" class="w-4/5">
-                    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Plante aromatique</p>
-            </div>
-            <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-screen" data-carousel-item>
-                    <img src="../components/img/favoris/laitue.webp" alt="laitue" class="w-4/5">
-                    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Laitue</p>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0" data-carousel-item>
+                    <img src="../components/img/favoris/basilic.webp" alt="basilic" class="">
+                    <p class="text-darkGreen font-inter font-light uppercase text-base mt-1">Plante aromatique</p>
             </div>
         </div>
     </div>

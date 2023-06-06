@@ -11,8 +11,7 @@ import Back from '@/components/icons/28px/Back.vue';
     <h1>Evènements</h1>
     <p class="font-inter font-xl uppercase text-center">Les évènements écologiques proches de chez vous</p>
     <p class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Mai 2023</p>
-    <div class="max-1-xl px-10 mx-auto grid grid-cols-1 gap-4 lg:grid-cols-2 lg:max-w-7xl">
-
+    <div class="max-1-xl px-10 mx-auto grid grid-cols-1 gap-4 lg:grid-cols-4 lg:max-w-7xl">
   <div>
     <img src="../components/img/evenements/Component 25.webp" alt="">
   </div>
@@ -36,6 +35,6 @@ import Back from '@/components/icons/28px/Back.vue';
 </div>
 </div>
 
-<RouterLink to="/ajoutEvenement"><button class="w-50 rounded-x2l bg-midGreen p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Ajouter un évènement</button></RouterLink>
+<RouterLink to="/ajoutEvenement" class="flex justify-center items-center"><button class="w-auto mt-12 rounded-x2l bg-midGreen px-8 py-2 text-x2l font-inter bold text-black uppercase">Ajouter un évènement</button></RouterLink>
 
 </template>

@@ -21,20 +21,45 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
         <p class="font-inter font-lg">Retour</p>
         </a>
 
-    <h1>{{ nameProduit}}</h1>
-    <img :src="urlImg">
-    <div class="flex">
+    <div class="lg:grid lg:grid-cols-2">
+        <div class="lg:grid-cols-1">
+            <h1>{{ nameProduit}}</h1>
+            <img class="w-screen lg:ml-2" :src="urlImg">
+            <div class="flex">
+                <div class="flex items-center">
         <RouterLink to="/favoris"><EmptyHeart /></RouterLink>
         <RouterLink to="/messagerie"><message /></RouterLink>
         <RouterLink to="/panier"><button class="w-40 rounded-x2l bg-midGreen p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Ajouter au panier</button></RouterLink>
+    </div>
+    </div>
     </div>
 
     <ul>
         <li><Euro />{{ price }}€/kilo</li>
         <li><MapMarker />{{ adresse }}</li>
-        <li><Info />Publié par {{  }} le {{ publier }}</li>
-        <li><CookingBook />Idée recettes avec des carottes</li>
+        <li><Info />Publié par Bernard Meunier le {{ datePublication }}</li>
+        <li>Idée recettes avec des carottes</li>
     </ul>
+    <CookingBook /><h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">D'autres astuces pour la maison</h3>
+    <div class="relative pt-6 pb-12 ml-4 w-1/2 lg:w-full mx-auto overflow-y-hidden" data-carousel="slide">
+        <div class="relative flex h-120 gap-4">
+          <div class="flex-none duration-700 ease-in-out flex-shrink-0" data-carousel-item>
+                    <img src="../components/img/forum/produit.webp" alt="Produits vitre" class="mb-2">
+                    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Lave-vitre au citron</p>
+                    <p class="font-darkGrey font-inter font-light text-base ml-4">par Stéphanie</p>
+            </div>
+            <div  class="flex-none duration-700 ease-in-out flex-shrink-0" data-carousel-item>
+                    <img src="../components/img/forum/vaisselle.webp" alt="Vaisselle" class="mb-2">
+                    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">La vaisselle avec moins d'eau</p>
+                    <p class="font-darkGrey font-inter font-light text-base ml-4">par Jules</p>
+            </div>
+            <div class="flex-none duration-700 ease-in-out flex-shrink-0" data-carousel-item>
+                    <img src="../components/img/forum/vitre.webp" alt="Vitre" class="mb-2">
+                    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Laver ses vitres efficacement</p>
+                    <p class="font-darkGrey font-inter font-light text-base ml-4">par David</p>
+            </div>
+        </div>
+    </div>
 
 
 </template>

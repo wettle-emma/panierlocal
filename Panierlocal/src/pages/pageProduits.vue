@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { allProduits } from '@/backend';
-import ProduitCard from '@/components/ProduitCard.vue';
+import produitCard from '@/components/ProduitCard.vue';
 import Back from '@/components/icons/28px/Back.vue';
 
 const listeProduits = await allProduits()
@@ -13,18 +13,18 @@ const listeProduits = await allProduits()
         </a>
 
     <h1>Produits</h1>
-    <h2 class="text-xl font-montserrat font-medium uppercase">Les plus populaires</h2>
+    <h2 class="text-xl font-montserrat font-medium uppercase ml-6">Les plus populaires</h2>
 
     <ul class="grid grid-cols-2 gap-6 mx-5 lg:grid-cols-4">
                     <li v-for="produits of listeProduits" v-bind="{...produits}">
                     <RouterLink :to="{ name: 'produits-id', params: {id: produits.id} }">
-                    <ProduitCard v-bind="{...produits}"/> 
+                    <produitCard v-bind="{...produits}"/> 
                     </RouterLink>
                 </li>
                 </ul>
-    <div>
+    <div class="my-8 mx-auto lg:grid lg:grid-cols-2">
         <img src="../components/img/illustrations/Marketplace-bro 1.webp" alt="">
-        <RouterLink to="/ajoutProduit"><button class="w-50 rounded-x2l bg-midGreen p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Ajouter un produit</button></RouterLink>
+        <RouterLink to="/ajoutProduit" class="flex justify-center items-center"><button class="w-auto h-12 px-8 py-4 rounded-x2l bg-midGreen text-x2l font-inter bold text-black uppercase">Ajouter un produit</button></RouterLink>
     </div>
     
 </template>

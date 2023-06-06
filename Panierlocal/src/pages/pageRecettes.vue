@@ -13,7 +13,7 @@ const listeRecettes = await allRecettes()
         </a>
 
     <h1>Recettes</h1>
-    <h2 class="text-xl font-montserrat font-medium uppercase">Les plus populaires</h2>
+    <h2 class="text-xl font-montserrat font-medium uppercase ml-6">Les plus populaires</h2>
 
     <ul class="grid grid-cols-2 gap-6 mx-5 lg:grid-cols-4">
                     <li v-for="recettes of listeRecettes" v-bind="{...recettes}">
@@ -22,9 +22,9 @@ const listeRecettes = await allRecettes()
                     </RouterLink>
                 </li>
                 </ul>
-    <div>
-        <img src="../components/img/illustrations/Cooking-cuate 1.webp" alt="">
-        <RouterLink to="/ajoutRecette"><button class="w-50 rounded-x2l bg-midGreen p-2 mt-6 mb-10 mx-28 text-x2l font-inter bold text-black uppercase">Ajouter une recette</button></RouterLink>
+    <div class="my-8 mx-auto lg:grid lg:grid-cols-2">
+        <img src="../components/img/illustrations/Cooking-cuate 1.webp">
+        <RouterLink to="/ajoutRecette" class="flex justify-center items-center"><button class="flex items-center w-auto h-12 px-8 py-4 rounded-x2l bg-midGreen text-x2l font-inter bold text-black uppercase ">Ajouter une recette</button></RouterLink>
     </div>
     
 </template>

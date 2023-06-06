@@ -19,11 +19,6 @@ import Back from '@/components/icons/28px/Back.vue';
                     <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Consommer moins d'énergie</p>
                     <p class="font-darkGrey font-inter font-light text-base ml-4">par Stéphanie</p>
             </div>
-            <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-5/6" data-carousel-item>
-                    <img src="../components/img/forum/velo.webp" alt="vélo" class="mb-2">
-                    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Le vélo plus souvent</p>
-                    <p class="font-darkGrey font-inter font-light text-base ml-4">par Stéphanie</p>
-            </div>
             <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-5/6" data-carousel-item>
                     <img src="../components/img/forum/marche.webp" alt="Marché" class="mb-2">
                     <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Consommer local</p>
@@ -40,12 +35,7 @@ import Back from '@/components/icons/28px/Back.vue';
                     <img src="../components/img/forum/produit.webp" alt="Produits vitre" class="mb-2">
                     <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Lave-vitre au citron</p>
                     <p class="font-darkGrey font-inter font-light text-base ml-4">par Stéphanie</p>
-            </div>
-            <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-11/12" data-carousel-item>
-                    <img src="../components/img/forum/vaisselle.webp" alt="Vaisselle" class="mb-2">
-                    <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">La vaisselle avec moins d'eau</p>
-                    <p class="font-darkGrey font-inter font-light text-base ml-4">par Jules</p>
-            </div>
+            </div>-
             <div class="flex-none duration-700 ease-in-out flex-shrink-0 w-11/12" data-carousel-item>
                     <img src="../components/img/forum/vitre.webp" alt="Vitre" class="mb-2">
                     <p class="text-darkGreen font-inter font-light uppercase text-base ml-4 mt-1">Laver ses vitres efficacement</p>

@@ -22,8 +22,8 @@
         <h3 class="font-inter font-semibold text-base">Communauté</h3>
         <ul class="font-inter text-base text-darkGreen">
           <li><RouterLink to="/forum">Forum</RouterLink></li>
-          <li><RouterLink to="/recette">Recettes</RouterLink></li>
-          <li><RouterLink to="/evenements">Evènements</RouterLink></li>
+          <li><RouterLink to="/pageRecettes">Recettes</RouterLink></li>
+          <li><RouterLink to="/pageEvenement">Evènements</RouterLink></li>
         </ul>
       </div>
 

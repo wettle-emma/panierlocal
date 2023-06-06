@@ -16,7 +16,8 @@
     "pocketbase": "^0.15.0",
     "v3-scroll-lock": "^1.3.2",
     "vue": "^3.3.4",
-    "vue-router": "^4.2.1"
+    "vue-router": "^4.2.1",
+    "vue3-google-map": "^0.15.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.0",

@@ -26,38 +26,38 @@
       </RouterLink>
     </div>
 
-    <div class="flex items-center gap-4">
+    <div class="flex items-center gap-4 lg:ml-24">
       <button>
         <RouterLink to="/profil2">
         <MaleUser />
         </RouterLink>
       </button>
 
-      <button class="relative z-10 flex h-5 w-8 flex-col justify-between" @click="activeMenu = !activeMenu">
+      <button class="relative z-10 flex h-5 w-8 flex-col justify-between lg:hidden" @click="activeMenu = !activeMenu">
         <div class="ease h-[2px] w-full transform rounded-full bg-black transition duration-300" :class="{ 'translate-y-[9px] rotate-45 bg-black': activeMenu }"></div>
         <div class="ease h-[2px] w-full transform rounded-full bg-black transition duration-300" :class="{ 'bg-black opacity-0': activeMenu }"></div>
         <div class="ease h-[2px] w-full transform rounded-full bg-black transition duration-300" :class="{ '-translate-y-[9px] -rotate-45 bg-black': activeMenu}"></div>
       </button>
 
 			<nav 
-            class="invisible opacity-0 bg-white font-bold text-base font-inter fixed inset-0 pt-20 pl-10 h-screen w-screen transition-all duration-300 ease-in-out lg:pt-70 lg:pl-30" 
+            class="invisible opacity-0 bg-lightGreen font-bold text-base font-inter fixed inset-0 pt-20 pl-10 h-screen w-screen transition-all duration-300 ease-in-out lg:pt-0 lg:pl-30  md:text-lg lg:visible lg:relative lg:flex lg:h-auto lg:w-auto lg:items-center lg:bg-transparent lg:text-base lg:underline lg:text-white lg:opacity-100" 
             :class="{ '!visible !opacity-100': activeMenu }"
             v-scroll-lock="activeMenu">
-		    <ul class="flex flex-col gap-1 lg:grid lg:grid-cols-2">
-          <div class="w-[177px] h-[50px]">
+		    <ul class="flex flex-col gap-1 lg:flex lg:flex-row lg:gap-2">
+          <div class="w-[177px] h-[50px] lg:invisible">
             <img class="left-[30.5px] top-[96.5px] w-1/4" src="../components/img/pdp + events/stephanie.webp" />
-            <p class="absolute left-24 top-[107px] text-xs font-semibold text-center text-[#252525]">Stéphanie Lévêque</p>
-            <RouterLink to="/profil2"><p class="absolute left-24 top-[122px] text-[10px] text-left text-[#868686]">Voir mon profil</p></RouterLink>
+            <p class="absolute left-24 top-[87px] text-xs font-semibold text-center text-[#252525]">Stéphanie Lévêque</p>
+            <RouterLink to="/profil2"><p class="absolute left-24 top-[105px] text-[10px] text-left text-[#868686]">Voir mon profil</p></RouterLink>
           </div>
           
-		      <li class="mt-8"><RouterLink class="menu-link" to="/pageProduits" @click="closeMenu"><ShoppingBag /><p class="ml-10 font-inter text-base">Produits</p></RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/favoris" @click="closeMenu"><Love /><p class="ml-10 font-inter text-base">Liste de Favoris</p></RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/ajoutContenu" @click="closeMenu"><plus /><p class="ml-10 font-inter text-base">Ajouter du contenu</p></RouterLink></li>
-		      <li><RouterLink class="menu-link" to="/messagerie" @click="closeMenu"><Chat /><p class="ml-10 font-inter text-base">Messagerie</p></RouterLink></li>
-          <li><RouterLink class="menu-link" to="/pageRecettes" @click="closeMenu"><CookingBookVue /><p class="ml-10 font-inter text-base">Recettes</p></RouterLink></li>
-          <li><RouterLink class="menu-link" to="/forum" @click="closeMenu"><group /><p class="ml-10 font-inter text-base">Forum</p></RouterLink></li>
-          <li><RouterLink class="menu-link" to="/pageEvenement" @click="closeMenu"><CalendarVue /><p class="ml-10 font-inter text-base">Evènements</p></RouterLink></li>
-          <li><RouterLink class="menu-link" to="/panier" @click="closeMenu"><ShoppingCartVue /><p class="ml-10 font-inter text-base">Panier</p></RouterLink></li>
+		      <li class="mt-8 lg:mt-0"><RouterLink class="menu-link" to="/pageProduits" @click="closeMenu"><ShoppingBag /><p class="flex items-center ml-10 font-inter text-base lg:ml-2 lg:items-end">Produits</p></RouterLink></li>
+		      <li><RouterLink class="menu-link" to="/favoris" @click="closeMenu"><Love /><p class="flex items-center ml-10 font-inter text-base lg:ml-2 lg:items-end">Liste de Favoris</p></RouterLink></li>
+		      <li><RouterLink class="menu-link" to="/ajoutContenu" @click="closeMenu"><plus /><p class="flex items-center ml-10 font-inter text-base lg:ml-2 lg:items-end">Ajouter du contenu</p></RouterLink></li>
+		      <li><RouterLink class="menu-link" to="/messagerie" @click="closeMenu"><Chat /><p class="flex items-center ml-10 font-inter text-base lg:ml-2 lg:items-end">Messagerie</p></RouterLink></li>
+          <li><RouterLink class="menu-link" to="/pageRecettes" @click="closeMenu"><CookingBookVue /><p class="flex items-center ml-10 font-inter text-base lg:ml-2 lg:items-end">Recettes</p></RouterLink></li>
+          <li><RouterLink class="menu-link" to="/forum" @click="closeMenu"><group /><p class="flex items-center ml-10 font-inter text-base lg:ml-2 lg:items-end">Forum</p></RouterLink></li>
+          <li><RouterLink class="menu-link" to="/pageEvenement" @click="closeMenu"><CalendarVue /><p class="flex items-center ml-10 font-inter text-base lg:ml-2 lg:items-end">Evènements</p></RouterLink></li>
+          <li><RouterLink class="menu-link" to="/panier" @click="closeMenu"><ShoppingCartVue /><p class="flex items-center ml-10 font-inter text-base lg:ml-2 lg:items-end">Panier</p></RouterLink></li>
 		    </ul>
 		  </nav>
     </div>

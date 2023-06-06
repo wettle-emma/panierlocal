@@ -74,7 +74,7 @@ export type ProduitsRecord = {
 	imageProduit?: string
 	price?: number
 	adresse?: string
-	publier?: IsoDateString
+	datePublication?: IsoDateString
 	lienproduit?: RecordIdString
 	photoProduit?: string
 }

@@ -4,11 +4,12 @@ import logo from '@/components/icons/logo/logo.vue';
 </script>
 
 <template>
-  <div class="pt-48">
-    <img class="lg:w-1/3 lg:mx-auto" src="../components/img/accueil/logo.png">
-    <p class="text-center text-x2l mx-10"><span class="bold text-Pop">Panier local</span> permet à chacun d’agir à son échelle <span class="bold text-Pop">contre le gaspillage</span>. Tout en agissant pour la <span class="bold text-Pop">planète</span>. Panier local nous <span class="bold text-Pop">rapproche</span> pour une <span class="bold text-Pop">cause</span> qui en vaut la peine.</p>
+  <div class="pt-48 lg:grid lg:grid-cols-2">
+    <img class="lg:w-2/3 lg:mx-auto lg:grid-cols-1" src="../components/img/accueil/logo.png">
+    <p class="text-center text-x2l mx-10 lg:grid-cols-2 lg:my-auto"><span class="bold text-Pop">Panier local</span> permet à chacun d’agir à son échelle <span class="bold text-Pop">contre le gaspillage</span>. Tout en agissant pour la <span class="bold text-Pop">planète</span>. Panier local nous <span class="bold text-Pop">rapproche</span> pour une <span class="bold text-Pop">cause</span> qui en vaut la peine.</p>
   </div>
-    
+<div>
+   
     <div class="mt-20 ml-4">
        <h1 class="pt-0">A ne pas manquer</h1>
        <div class="relative pt-6 pb-16 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
@@ -24,8 +25,8 @@ import logo from '@/components/icons/logo/logo.vue';
             </div>
         </div>
     </div>
-    </div>
-
+</div>
+<div class="lg:grid lg:grid-cols-3"> 
     <div class="ml-4 lg:mb-16">
         <p class="text-darkGreen text-x4l font-montserrat font-bold">Les profils les plus visités</p>
         <div class="relative pt-6 pb-16 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
@@ -46,7 +47,7 @@ import logo from '@/components/icons/logo/logo.vue';
                     <img src="../components/img/accueil/accueil pdp/trait.webp" alt="Photo de profil" class="mb-2">
             </div>
         </div>
-    </div>
+</div>
 </div>
 
 <div class="ml-4 lg:mb-16">
@@ -98,6 +99,8 @@ import logo from '@/components/icons/logo/logo.vue';
             </div>
           </div>
     </div>
+</div>
+</div>
 </div>
 
 

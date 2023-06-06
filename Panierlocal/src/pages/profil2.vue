@@ -100,10 +100,10 @@ import back from '@/components/icons/28px/Back.vue';
      </RouterLink>
   </div>
 
-  <div class="flex">
-  <div class="border-2 border-darkGreen w-3/4 h-8 rounded-x2l ml-4 mt-4 mb-6 flex items-center justify-center">
-    <p class="text-center lg:text-2xl lg:p-4">Modifier le profil</p>
-</div>
+        <div class="flex">
+        <RouterLink to="/parametres" class="border-2 border-midGreen w-3/4 h-8 rounded-x2l ml-4 mt-4 mb-6 flex items-center justify-center">
+                <p class="text-center lg:text-2xl lg:p-4">Modifier le profil</p>
+        </Routerlink>
 <div class="w-1/4 flex items-center justify-center"><share /></div>
 </div>
 </template>
