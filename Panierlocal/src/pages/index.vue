@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import logo from '@/components/icons/logo/logo.vue';
-import logoAccueil from '@/components/icons/logo/logoAccueil.vue';
+
 </script>
 
 <template>
   <div class="pt-48">
-    <logoAccueil class="mx-auto mb-16"/>
+    <img class="lg:w-1/3 lg:mx-auto" src="../components/img/accueil/logo.png">
     <p class="text-center text-x2l mx-10"><span class="bold text-Pop">Panier local</span> permet à chacun d’agir à son échelle <span class="bold text-Pop">contre le gaspillage</span>. Tout en agissant pour la <span class="bold text-Pop">planète</span>. Panier local nous <span class="bold text-Pop">rapproche</span> pour une <span class="bold text-Pop">cause</span> qui en vaut la peine.</p>
   </div>
     
