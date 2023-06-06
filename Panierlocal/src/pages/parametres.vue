@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Back from '@/components/icons/28px/Back.vue';
+
 </script>
 
 <template>

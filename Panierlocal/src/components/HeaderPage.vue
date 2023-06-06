@@ -28,7 +28,7 @@
 
     <div class="flex items-center gap-4 lg:ml-24">
       <button>
-        <RouterLink to="/profil2">
+        <RouterLink to="/inscription">
         <MaleUser />
         </RouterLink>
       </button>

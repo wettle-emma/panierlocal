@@ -30,7 +30,7 @@
       <div class="space-y-2">
         <h3 class="font-inter font-semibold text-base">Compte</h3>
         <ul class="font-inter text-base text-darkGreen">
-          <li><RouterLink to="/parametres">Mon profil</RouterLink></li>
+          <li><RouterLink to="/profil2">Mon profil</RouterLink></li>
           <li><RouterLink to="/favoris">Mes favoris</RouterLink></li>
         </ul>
       </div>

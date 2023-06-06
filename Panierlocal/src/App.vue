@@ -13,7 +13,7 @@
 
 <template>
   <HeaderPage />
-  <main>
+  <main class="pt-8 w-screen">
     <Suspense>
      <RouterView />
     </Suspense>

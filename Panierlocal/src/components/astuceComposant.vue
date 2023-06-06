@@ -22,8 +22,6 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
         </a>
 
   <h1>{{ nameAstuce }}</h1>
-  <div></div>
-  <div></div>
   <div class="lg:grid lg:grid-cols-2">
     <div class="lg:grid-cols-1">
         <img class="w-screen lg:ml-2" :src="urlImg">
@@ -39,7 +37,7 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
         </div>
    </div>
 
-   <div class="lg:grid-cols-2">
+   <div class="block lg:grid-cols-2">
     <h2 class="font-inter font-bold text-x2l text-center">Pour {{ nbr_usages }} usages</h2>
     <h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Produits nécessaires</h3>
     <p class="ml-4 text-lg lg:flex lg:justify-center">{{ produits }}</p>
@@ -59,7 +57,7 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
   </div>
 
     <h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">D'autres astuces pour la maison</h3>
-    <div class="relative pt-6 pb-12 ml-4 w-1/2 lg:w-full mx-auto overflow-y-hidden" data-carousel="slide">
+    <div class="relative pt-6 pb-12 ml-4 lg:w-full mx-auto overflow-y-hidden" data-carousel="slide">
         <div class="relative flex h-120 gap-4">
           <div class="flex-none duration-700 ease-in-out flex-shrink-0" data-carousel-item>
                     <img src="../components/img/forum/produit.webp" alt="Produits vitre" class="mb-2">

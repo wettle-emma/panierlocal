@@ -18,9 +18,7 @@ import Map from '@/components/GoogleMap.vue'
 
  <img class="pt-20 lg:w-3/4" src="../components/img/pdp + events/Rectangle 43.webp" />
 
-    <div>
-        <Map />
-    </div>
+    
 
 
     <div>
@@ -30,6 +28,9 @@ import Map from '@/components/GoogleMap.vue'
         <li class="menu-link"><Calendar /><p class="flex ml-10 font-inter text-base items-center">Vendredi 12 mai 2023</p></li>
         <li class="menu-link"><Clock /><p class="flex items-center ml-10 font-inter text-base">18h30 - 20h</p></li>
         <li class="menu-link"><MapMarker /><p class="flex items-center undeline ml-10 font-inter text-base">15 rue du Printemps, 68400 Riedisheim</p></li>
+        <div class="">
+          <Map />
+        </div>
         <li class="menu-link"><phone /><p class="flex items-center underline ml-10 font-inter text-base">07.81.56.75.12</p></li>
     </ul>
     </div>
