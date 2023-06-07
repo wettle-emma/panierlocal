@@ -74,7 +74,7 @@ import logo from '@/components/icons/logo/logo.vue';
 </div>
 
 <div class="mb-16 ml-4 lg:mb-16">
-        <p class="text-darkGreen text-x4l font-montserrat font-bold">Vos favoris</p>
+        <p class="text-Pop text-x4l font-montserrat font-bold">Vos favoris</p>
         <div class="relative pt-6 pb-16 w-full lg:w-3/5 mx-auto flex justify-center overflow-y-hidden" data-carousel="slide">
         <div class="relative flex h-120 gap-4">
             <div  class="flex-none duration-700 ease-in-out flex-shrink-0 w-1/2" data-carousel-item>

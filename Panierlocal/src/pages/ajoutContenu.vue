@@ -9,7 +9,7 @@ import Back from '@/components/icons/28px/Back.vue';
         </a>
 
     <h1>Ajouter du contenu</h1>
-    <h2 class="text-xl font-montserrat font-medium uppercase">Catégories</h2>
+    <h2 class="text-xl font-montserrat font-medium uppercase ml-4">Catégories</h2>
     <p class="text-[13px] font-inter text-grey ml-6">Cliquer sur la catégorie de votre annonce</p>
 
     <div class="mb-12 lg:ml-80">
