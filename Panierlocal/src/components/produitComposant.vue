@@ -34,13 +34,13 @@ const urlImg = pb.files.getUrl(props, img0, { thumb: '100x200' })
     </div>
     </div>
     </div>
-    </div>
+   
 
-    <ul class="block ml-10 mt-4">
+    <ul class="block ml-10 mt-4 lg:grid-cols-1 lg:my-auto lg:mx-auto">
         <li class="flex mt-4 gap-2"><Euro />{{ price }}€/kilo</li>
         <li class="flex mt-4 gap-2"><MapMarker />{{ adresse }}</li>
         <li class="flex mt-4 gap-2"><Info />Publié par Bernard Meunier le {{ datePublication }}</li>
-    </ul>
+    </ul> </div>
 
     <CookingBook class="flex pt-10" /><h3 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">D'autres idées recettes</h3>
     <div class="relative pt-6 pb-12 ml-4 w-full mx-auto overflow-y-hidden" data-carousel="slide">

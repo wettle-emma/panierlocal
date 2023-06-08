@@ -26,6 +26,11 @@ import Back from '@/components/icons/28px/Back.vue';
             </div>
         </div>
     </div>
+    <div class=" ">
+     <RouterLink to="/pageAstuces">
+      <p class="text-Pop font-bold py-2 pr-6 text-right text-base underline">En voir plus</p>
+     </RouterLink>
+  </div>
 
   <h2 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Maison</h2>
 
@@ -43,6 +48,11 @@ import Back from '@/components/icons/28px/Back.vue';
             </div>
         </div>
     </div>
+    <div class=" ">
+     <RouterLink to="/pageAstuces">
+      <p class="text-Pop font-bold py-2 pr-6 text-right text-base underline">En voir plus</p>
+     </RouterLink>
+  </div>
 
   <h2 class="font-montserrat font-bold text-x3l text-darkGreen ml-8 my-10">Podcast</h2>
  
